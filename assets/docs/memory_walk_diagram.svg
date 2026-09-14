@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280">
+  <defs>
+    <linearGradient id="mwBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/><stop offset="100%" stop-color="#F2EFE8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FAF5EE"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#442E1D" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="280" rx="16" fill="url(#mwBg)" stroke="#EADCCF" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(32, 22)">
+    <rect width="132" height="22" rx="6" fill="#8C3F16" opacity="0.1"/>
+    <text x="8" y="15" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="800" fill="#8C3F16" letter-spacing="0.5">SPATIAL ENGINE</text>
+    <text x="144" y="16" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="#2E241E">
+      Memory Walk: 2.5D Perspective Projection &amp; Synchronized Controller
+    </text>
+  </g>
+
+  <!-- 3 CARDS -->
+  <g transform="translate(28, 56)">
+    <!-- CARD 1: 3D Camera Projection -->
+    <g transform="translate(0, 0)" filter="url(#softShadow)">
+      <rect width="288" height="198" rx="12" fill="url(#cardGrad)" stroke="#DFD3C4" stroke-width="1.2"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FFF0E6"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">📷</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#A8441A" letter-spacing="0.5">01. PERSPECTIVE CAMERA</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">Camera3D Projection</text>
+
+      <g transform="translate(14, 56)">
+        <rect width="260" height="128" rx="8" fill="#FFFFFF" stroke="#EAE0D3" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#8C441E">Mathematical 3D → 2D Projection:</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="400" fill="#594436">
+          <tspan x="12" dy="0">• Focal Length (500.0) &amp; Pitch (0.35 rad)</tspan>
+          <tspan x="12" dy="15">• Distance scaling: scale = f / (y_cam + f)</tspan>
+          <tspan x="12" dy="15">• Soft deadzone anchor (dx: 20, dy: 25)</tspan>
+          <tspan x="12" dy="15">• Smooth lag damping (lagT = 0.15)</tspan>
+          <tspan x="12" dy="15">• Back-plane clipping behind the camera</tspan>
+          <tspan x="12" dy="15">• Painter's Algorithm depth sorting</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- CARD 2: Coordinate Space -->
+    <g transform="translate(308, 0)" filter="url(#softShadow)">
+      <rect width="288" height="198" rx="12" fill="url(#cardGrad)" stroke="#CADDC6" stroke-width="1.2"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#F0F8EE"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">📍</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2B6B22" letter-spacing="0.5">02. SPATIAL COORDINATES</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">WorldPos &amp; Landmarks</text>
+
+      <g transform="translate(14, 56)">
+        <rect width="260" height="128" rx="8" fill="#FFFFFF" stroke="#CCE0C7" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#2E6123">Landmark Positioning &amp; Traversal:</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="400" fill="#3D5239">
+          <tspan x="12" dy="0">• Euclidean horizontal vector distance math</tspan>
+          <tspan x="12" dy="15">• Proximity triggers (&lt; 45px proximity zone)</tspan>
+          <tspan x="12" dy="15">• Direction signboards with dynamic arrows</tspan>
+          <tspan x="12" dy="15">• Interactive taps open Keepsake sheet</tspan>
+          <tspan x="12" dy="15">• Nature objects (trees, benches, lanterns)</tspan>
+          <tspan x="12" dy="15">• Bounded world terrain boundaries</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- CARD 3: Synchronized Controller -->
+    <g transform="translate(616, 0)" filter="url(#softShadow)">
+      <rect width="288" height="198" rx="12" fill="url(#cardGrad)" stroke="#E8C7CD" stroke-width="1.2"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FDEEF1"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">👫</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#992E3E" letter-spacing="0.5">03. PAIRED CONTROLLER</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">Couple Character Engine</text>
+
+      <g transform="translate(14, 56)">
+        <rect width="260" height="128" rx="8" fill="#FFFFFF" stroke="#EFC8CF" stroke-width="1"/>
+        <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#8C2B39">Synchronized Animation &amp; Mood:</text>
+        <text x="12" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="400" fill="#5E373F">
+          <tspan x="12" dy="0">• Virtual 360° tactile joystick tracking</tspan>
+          <tspan x="12" dy="15">• Shared umbrella holding during rain</tspan>
+          <tspan x="12" dy="15">• Winter scarves &amp; earmuffs in snow</tspan>
+          <tspan x="12" dy="15">• Toggleable 'Hold Hands' synchronized walk</tspan>
+          <tspan x="12" dy="15">• Real-time avatar styles, skin, &amp; hair tones</tspan>
+          <tspan x="12" dy="15">• Garden rabbit companion AI reactivity</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

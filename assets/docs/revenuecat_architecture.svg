@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="rcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="50%" stop-color="#FEF8F0"/>
+      <stop offset="100%" stop-color="#FAF4EB"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="rcCard1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FAF5EE"/>
+    </linearGradient>
+    <linearGradient id="rcCard2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5EC"/><stop offset="100%" stop-color="#FEE8D6"/>
+    </linearGradient>
+    <linearGradient id="rcCard3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2F8F0"/><stop offset="100%" stop-color="#DDF0DA"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#442E1D" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="960" height="300" rx="16" fill="url(#rcBg)" stroke="#EBDDCF" stroke-width="1.5"/>
+
+  <!-- Section Header -->
+  <g transform="translate(32, 22)">
+    <rect width="118" height="22" rx="6" fill="#E56A38" opacity="0.12"/>
+    <text x="8" y="15" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="800" fill="#BA4716" letter-spacing="0.5">MONETIZATION</text>
+    <text x="130" y="16" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="#2E241E">
+      MIMORY+ Entitlement &amp; Purchase Pipeline
+    </text>
+    <text x="560" y="15" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#BA4716">
+      Powered by RevenueCat (purchases_flutter: ^10.12.0)
+    </text>
+  </g>
+
+  <!-- 4 HORIZONTAL PIPELINE BLOCKS -->
+  <g transform="translate(28, 56)">
+
+    <!-- BLOCK 1: Offerings & Packages -->
+    <g transform="translate(0, 0)" filter="url(#softShadow)">
+      <rect width="200" height="216" rx="12" fill="url(#rcCard1)" stroke="#DFD4C5" stroke-width="1.2"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FFF0E6"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">🏷️</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#8C441E" letter-spacing="0.5">01. OFFERINGS</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">Package Types</text>
+
+      <!-- Sub-Pills -->
+      <g transform="translate(14, 58)">
+        <rect width="172" height="38" rx="8" fill="#FFFFFF" stroke="#E5D9C8" stroke-width="1"/>
+        <circle cx="16" cy="19" r="5" fill="#E56A38"/>
+        <text x="30" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#2E241E">Monthly</text>
+        <text x="156" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#755B49" text-anchor="end">Auto-Renew</text>
+      </g>
+      <g transform="translate(14, 104)">
+        <rect width="172" height="38" rx="8" fill="#FEF7F0" stroke="#F6D5B5" stroke-width="1.2"/>
+        <circle cx="16" cy="19" r="5" fill="#E56A38"/>
+        <text x="30" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#994418">Yearly</text>
+        <text x="156" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="700" fill="#E56A38" text-anchor="end">Best Value</text>
+      </g>
+      <g transform="translate(14, 150)">
+        <rect width="172" height="38" rx="8" fill="#FFFFFF" stroke="#E5D9C8" stroke-width="1"/>
+        <circle cx="16" cy="19" r="5" fill="#E56A38"/>
+        <text x="30" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#2E241E">Lifetime</text>
+        <text x="156" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#755B49" text-anchor="end">One-Time</text>
+      </g>
+    </g>
+
+    <!-- Connector 1 -> 2 -->
+    <g transform="translate(204, 100)">
+      <path d="M 0,8 L 18,8 M 12,3 L 18,8 L 12,13" stroke="#BA4716" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- BLOCK 2: RevenueCat Engine -->
+    <g transform="translate(228, 0)" filter="url(#softShadow)">
+      <rect width="210" height="216" rx="12" fill="url(#rcCard2)" stroke="#F6CFA8" stroke-width="1.4"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FFFFFF"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">⚡</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#BA4716" letter-spacing="0.5">02. REVENUECAT SDK</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">purchases_flutter</text>
+
+      <g transform="translate(14, 58)">
+        <rect width="182" height="142" rx="8" fill="#FFFFFF" stroke="#F2CEB0" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="700" fill="#8C3F16">Engine Responsibilities:</text>
+        <text x="12" y="40" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#614434">
+          <tspan x="12" dy="0">• Purchases.configure(key)</tspan>
+          <tspan x="12" dy="16">• Purchases.purchase(package)</tspan>
+          <tspan x="12" dy="16">• Purchases.restorePurchases()</tspan>
+          <tspan x="12" dy="16">• Test Store / Sandbox validation</tspan>
+          <tspan x="12" dy="16">• CustomerInfo update listener</tspan>
+          <tspan x="12" dy="16">• Error &amp; Cancellation handling</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Connector 2 -> 3 -->
+    <g transform="translate(442, 100)">
+      <path d="M 0,8 L 18,8 M 12,3 L 18,8 L 12,13" stroke="#BA4716" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- BLOCK 3: Verified Entitlement -->
+    <g transform="translate(466, 0)" filter="url(#softShadow)">
+      <rect width="200" height="216" rx="12" fill="url(#rcCard3)" stroke="#BADAB3" stroke-width="1.4"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FFFFFF"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">🛡️</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2E6624" letter-spacing="0.5">03. ENTITLEMENT</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">mimory_plus</text>
+
+      <g transform="translate(14, 58)">
+        <rect width="172" height="142" rx="8" fill="#FFFFFF" stroke="#CCE4C7" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2E6624">STATUS: ACTIVE</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#385434">
+          <tspan x="12" dy="0">• Strictly evaluates</tspan>
+          <tspan x="12" dy="14">  CustomerInfo state</tspan>
+          <tspan x="12" dy="16">• NO local fake flags</tspan>
+          <tspan x="12" dy="16">• Reactive stream to</tspan>
+          <tspan x="12" dy="14">  all Flutter screens</tspan>
+          <tspan x="12" dy="16">• Auto-syncs across</tspan>
+          <tspan x="12" dy="14">  restores &amp; relogins</tspan>
+        </text>
+      </g>
+    </g>
+
+    <!-- Connector 3 -> 4 -->
+    <g transform="translate(670, 100)">
+      <path d="M 0,8 L 18,8 M 12,3 L 18,8 L 12,13" stroke="#BA4716" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- BLOCK 4: Unlocked Experience -->
+    <g transform="translate(694, 0)" filter="url(#softShadow)">
+      <rect width="210" height="216" rx="12" fill="url(#rcCard1)" stroke="#DFD4C5" stroke-width="1.2"/>
+      <rect width="32" height="32" x="14" y="14" rx="8" fill="#FEF4E8"/>
+      <text x="30" y="36" font-size="16" text-anchor="middle">💖</text>
+      <text x="56" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#8C441E" letter-spacing="0.5">04. CELEBRATION</text>
+      <text x="56" y="41" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#2E241E">"World Just Grew"</text>
+
+      <g transform="translate(14, 58)">
+        <rect width="182" height="142" rx="8" fill="#FFFFFF" stroke="#E5D9C8" stroke-width="1"/>
+        <text x="12" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="700" fill="#8C441E">Unlocked Capabilities:</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#5E493C">
+          <tspan x="12" dy="0">🌿 Unlimited Memory Worlds</tspan>
+          <tspan x="12" dy="16">🌧️ Advanced Living Weathers</tspan>
+          <tspan x="12" dy="14">   (Rain, Snow &amp; Night)</tspan>
+          <tspan x="12" dy="16">🐇 Storybook Companions</tspan>
+          <tspan x="12" dy="14">   (Garden Rabbit &amp; Pair)</tspan>
+          <tspan x="12" dy="16">✨ Instant Visual Feedback</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

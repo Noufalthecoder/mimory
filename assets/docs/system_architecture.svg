@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#F4EFE7"/>
+    </linearGradient>
+
+    <!-- Layer Gradients -->
+    <linearGradient id="layer1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FAF5EE"/>
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F2F8F0"/>
+    </linearGradient>
+    <linearGradient id="layer3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FBF2EB"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8FD"/><stop offset="100%" stop-color="#E5EFFB"/>
+    </linearGradient>
+    <linearGradient id="sageCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4F9F2"/><stop offset="100%" stop-color="#E2EFE0"/>
+    </linearGradient>
+    <linearGradient id="peachCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5EE"/><stop offset="100%" stop-color="#FDE8DA"/>
+    </linearGradient>
+    <linearGradient id="roseCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF4F5"/><stop offset="100%" stop-color="#FBDDE1"/>
+    </linearGradient>
+    <linearGradient id="goldCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9ED"/><stop offset="100%" stop-color="#FCEECA"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#402D1E" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="960" height="540" rx="16" fill="url(#archBg)" stroke="#E8DDCF" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <g transform="translate(32, 24)">
+    <rect width="96" height="22" rx="6" fill="#02569B" opacity="0.1"/>
+    <text x="8" y="15" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="800" fill="#02569B" letter-spacing="0.5">ARCHITECTURE</text>
+    <text x="108" y="16" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="#2E241E">
+      MIMORY System &amp; Data Pipeline
+    </text>
+  </g>
+
+  <!-- LAYER 1: PRESENTATION & FEATURE DOMAINS -->
+  <g transform="translate(24, 56)" filter="url(#softShadow)">
+    <rect width="912" height="154" rx="14" fill="url(#layer1Grad)" stroke="#E5DAC8" stroke-width="1.5"/>
+    
+    <!-- Layer Header -->
+    <g transform="translate(18, 14)">
+      <circle cx="6" cy="6" r="4" fill="#3D5A80"/>
+      <text x="16" y="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#3D5A80" letter-spacing="0.5">
+        PRESENTATION &amp; EXPERIENTIAL DOMAINS (FLUTTER / DART)
+      </text>
+    </g>
+
+    <!-- 5 Feature Domain Cards -->
+    <g transform="translate(18, 36)">
+      <!-- Auth -->
+      <g transform="translate(0, 0)">
+        <rect width="164" height="102" rx="10" fill="url(#blueCard)" stroke="#C8DCF0" stroke-width="1.2"/>
+        <text x="12" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#1C4B75">features/auth</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#4B637B">
+          <tspan x="12" dy="0">• WelcomeScreen</tspan>
+          <tspan x="12" dy="14">• LoginScreen</tspan>
+          <tspan x="12" dy="14">• Mock OAuth &amp; Email</tspan>
+          <tspan x="12" dy="14">• Session Persistence</tspan>
+        </text>
+      </g>
+
+      <!-- World -->
+      <g transform="translate(178, 0)">
+        <rect width="170" height="102" rx="10" fill="url(#sageCard)" stroke="#BDDCB6" stroke-width="1.2"/>
+        <text x="12" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#275C21">features/world</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#43613D">
+          <tspan x="12" dy="0">• World Creation Wizard</tspan>
+          <tspan x="12" dy="14">• Chibi Avatar Selector</tspan>
+          <tspan x="12" dy="14">• WorldScreen Canvas</tspan>
+          <tspan x="12" dy="14">• YourWorlds Overview</tspan>
+        </text>
+      </g>
+
+      <!-- Memory -->
+      <g transform="translate(362, 0)">
+        <rect width="164" height="102" rx="10" fill="url(#peachCard)" stroke="#F5CCB2" stroke-width="1.2"/>
+        <text x="12" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#8C3F16">features/memory</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#755240">
+          <tspan x="12" dy="0">• FirstMemoryScreen</tspan>
+          <tspan x="12" dy="14">• Keepsake Detail Sheet</tspan>
+          <tspan x="12" dy="14">• Photo Picker &amp; Crop</tspan>
+          <tspan x="12" dy="14">• Story Keepsake Form</tspan>
+        </text>
+      </g>
+
+      <!-- Monetization -->
+      <g transform="translate(540, 0)">
+        <rect width="164" height="102" rx="10" fill="url(#goldCard)" stroke="#F2D18F" stroke-width="1.2"/>
+        <text x="12" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#8C5C0B">features/monetization</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#6E5629">
+          <tspan x="12" dy="0">• MimoryPlusPaywall</tspan>
+          <tspan x="12" dy="14">• CelebrationScreen</tspan>
+          <tspan x="12" dy="14">• Truthful Capabilities</tspan>
+          <tspan x="12" dy="14">• Storybook Cards</tspan>
+        </text>
+      </g>
+
+      <!-- Memory Walk -->
+      <g transform="translate(718, 0)">
+        <rect width="158" height="102" rx="10" fill="url(#roseCard)" stroke="#F5CCD2" stroke-width="1.2"/>
+        <text x="12" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#992E3E">widgets/memory_walk</text>
+        <text x="12" y="42" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#73474F">
+          <tspan x="12" dy="0">• Camera3D Projection</tspan>
+          <tspan x="12" dy="14">• 2.5D Virtual Joystick</tspan>
+          <tspan x="12" dy="14">• Paired Couple Walking</tspan>
+          <tspan x="12" dy="14">• Rain &amp; Snow Layers</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Flow Arrows 1 -> 2 -->
+  <g transform="translate(480, 216)">
+    <path d="M 0,0 L 0,16 M -4,12 L 0,16 L 4,12" stroke="#8C7968" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- LAYER 2: DOMAIN STATE ORCHESTRATION -->
+  <g transform="translate(24, 238)" filter="url(#softShadow)">
+    <rect width="912" height="116" rx="14" fill="url(#layer2Grad)" stroke="#CCE0C8" stroke-width="1.5"/>
+
+    <!-- Layer Header -->
+    <g transform="translate(18, 14)">
+      <circle cx="6" cy="6" r="4" fill="#2E6123"/>
+      <text x="16" y="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#2E6123" letter-spacing="0.5">
+        DOMAIN STATE ORCHESTRATION &amp; BUSINESS LOGIC
+      </text>
+    </g>
+
+    <g transform="translate(18, 34)">
+      <!-- WorldService Card -->
+      <g transform="translate(0, 0)">
+        <rect width="426" height="70" rx="10" fill="#FFFFFF" stroke="#C5DCC0" stroke-width="1.2"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#214719">
+          WorldService <tspan font-weight="400" fill="#587850">(Singleton State Manager)</tspan>
+        </text>
+        <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#4B5E48">
+          <tspan x="16" dy="0">• Manages active Session, World list, and 1:N Memories</tspan>
+          <tspan x="16" dy="15">• Character pair factory with avatar customization bindings</tspan>
+        </text>
+      </g>
+
+      <!-- RevenueCatService Card -->
+      <g transform="translate(448, 0)">
+        <rect width="428" height="70" rx="10" fill="#FFFFFF" stroke="#F6D5AA" stroke-width="1.2"/>
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#8F3F10">
+          RevenueCatService <tspan font-weight="400" fill="#8F5E40">(ChangeNotifier Provider)</tspan>
+        </text>
+        <text x="16" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#694C38">
+          <tspan x="16" dy="0">• Evaluates verified 'mimory_plus' customer entitlement state</tspan>
+          <tspan x="16" dy="15">• Reactive subscription broadcast, offerings cache, &amp; restore flow</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Flow Arrows 2 -> 3 -->
+  <g transform="translate(480, 360)">
+    <path d="M 0,0 L 0,16 M -4,12 L 0,16 L 4,12" stroke="#8C7968" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- LAYER 3: PERSISTENCE & EXTERNAL SERVICES -->
+  <g transform="translate(24, 382)" filter="url(#softShadow)">
+    <rect width="912" height="134" rx="14" fill="url(#layer3Grad)" stroke="#EADBCE" stroke-width="1.5"/>
+
+    <!-- Layer Header -->
+    <g transform="translate(18, 14)">
+      <circle cx="6" cy="6" r="4" fill="#8C441E"/>
+      <text x="16" y="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#8C441E" letter-spacing="0.5">
+        PERSISTENCE &amp; EXTERNAL INFRASTRUCTURE
+      </text>
+    </g>
+
+    <g transform="translate(18, 34)">
+      <!-- StorageService -->
+      <g transform="translate(0, 0)">
+        <rect width="278" height="86" rx="10" fill="#FFFFFF" stroke="#DEC8B8" stroke-width="1.2"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#3D291C">StorageService</text>
+        <text x="14" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#6B5344">
+          <tspan x="14" dy="0">• SharedPreferences JSON storage</tspan>
+          <tspan x="14" dy="14">• Keyed: 'mimory_worlds', 'mimory_memories'</tspan>
+          <tspan x="14" dy="14">• Fully offline, zero cloud reliance</tspan>
+        </text>
+      </g>
+
+      <!-- Persistent Photo Sandbox -->
+      <g transform="translate(294, 0)">
+        <rect width="286" height="86" rx="10" fill="#FFFFFF" stroke="#DEC8B8" stroke-width="1.2"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#3D291C">Persistent Media Storage</text>
+        <text x="14" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#6B5344">
+          <tspan x="14" dy="0">• path_provider document directory</tspan>
+          <tspan x="14" dy="14">• Persistent sandbox: /mimory_photos/</tspan>
+          <tspan x="14" dy="14">• Survives app upgrades &amp; device restarts</tspan>
+        </text>
+      </g>
+
+      <!-- RevenueCat Backend -->
+      <g transform="translate(596, 0)">
+        <rect width="280" height="86" rx="10" fill="#FEF6EE" stroke="#F4CA98" stroke-width="1.2"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#994314">RevenueCat Infrastructure</text>
+        <text x="14" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="400" fill="#7A4E33">
+          <tspan x="14" dy="0">• purchases_flutter SDK runtime</tspan>
+          <tspan x="14" dy="14">• Test Store sandbox simulation</tspan>
+          <tspan x="14" dy="14">• Server-side receipt &amp; entitlement checks</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
