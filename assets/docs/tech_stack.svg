@@ -24,7 +24,7 @@
       <text x="42" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#02569B">Flutter 3.x</text>
       <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#3D2B1F">UI &amp; Canvas Engine</text>
       <text x="14" y="68" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="400" fill="#6B5647">
-        <tspan x="14" dy="0">Native 60fps canvas</tspan>
+        <tspan x="14" dy="0">Smooth mobile canvas</tspan>
         <tspan x="14" dy="12">rendering for iOS &amp; Android.</tspan>
       </text>
     </g>

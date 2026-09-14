@@ -20,7 +20,7 @@ We regularly keep memories of the people who matter to us.
 
 Photos. Trips. Birthdays. Inside jokes. Messages. Small everyday moments.
 
-Yet those memories usually end up scattered across camera rolls, endless chat histories, and forgotten cloud folders.
+Yet those memories usually end up scattered across camera rolls, endless chat histories, and forgotten folders.
 
 And relationships naturally have quiet moments:
 - Life gets busy.
@@ -161,7 +161,7 @@ MIMORY's emotional loop is designed to protect perspective during quiet seasons 
           ↓
      the bigger story comes back
           ↓
-     remember and reconnect
+     remember what matters
 ```
 
 MIMORY does not claim to fix relationships or enforce communication. It simply preserves what you have built together, so that in quiet times, the warmth of the bigger story is never lost.
@@ -184,7 +184,7 @@ Memories become physical landmarks along scenic paths. Direction signposts point
 
 ### Under the Hood: Spatial Projection & Math
 
-Memory Walk uses a custom programmatic canvas renderer built on Flutter's `CustomPainter` to deliver native 60fps performance without heavy 3D asset bundles:
+Memory Walk uses a custom programmatic canvas renderer built on Flutter's `CustomPainter`, designed for smooth mobile canvas rendering without heavy 3D asset bundles:
 
 1. **3D Perspective Camera (`Camera3D`)**: Mathematically projects 3D world coordinates `(x, y, z)` into screen coordinates `(dx, dy)` using focal length (`500.0`) and pitch angles (`0.35 rad`), applying painter's algorithm depth sorting and distance scaling:
    $$\text{scale} = \frac{\text{focalLength}}{y_{\text{camera}} + \text{focalLength}}$$
@@ -247,7 +247,7 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
 
 ### Custom Canvas 2.5D Rendering
 - **What we did**: Built a lightweight 2.5D perspective engine using Flutter's native `CustomPainter` and mathematical vector projection.
-- **Why we did it**: Delivers smooth 60fps mobile canvas performance on iOS and Android without the overhead, download size, and battery drain of heavy 3D game engines.
+- **Why we did it**: Designed for smooth mobile canvas rendering on iOS and Android without the overhead, download size, and battery drain of heavy 3D game engines.
 
 ### Clean Service Boundaries
 - **What we did**: Services expose clean async interfaces (`createWorld`, `purchasePackage`, `persistPhoto`) and emit reactive notifications via `ChangeNotifier`.
@@ -304,7 +304,7 @@ MIMORY enforces a clean, deterministic relational model between worlds, memories
 
 | Layer | Technology | Architectural Rationale |
 |---|---|---|
-| **Framework** | Flutter 3.x / Dart SDK | Cross-platform codebase delivering native 60fps canvas rendering on iOS and Android. |
+| **Framework** | Flutter 3.x / Dart SDK | Cross-platform codebase designed for smooth mobile canvas rendering on iOS and Android. |
 | **Monetization** | RevenueCat (`purchases_flutter: ^10.12.0`) | Verified entitlement evaluation, offerings delivery, and cross-platform purchase handling. |
 | **Local Persistence** | `shared_preferences: ^2.5.5` | Fast, lightweight local key-value persistence for structured JSON worlds, memories, and sessions. |
 | **Document Storage** | `path_provider: ^2.1.6` | App-controlled sandboxed document directory for persistent keepsake photo storage. |
@@ -410,7 +410,7 @@ To ensure complete transparency and trustworthiness, here is the verified status
 ## Getting Started
 
 ### Prerequisites
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.13.3 or higher)
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (matching Dart SDK `^3.13.3`)
 - Android Studio / Xcode (for device deployment or simulators)
 
 ### Installation
