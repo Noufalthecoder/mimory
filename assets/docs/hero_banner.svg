@@ -1,29 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420">
   <defs>
-    <style>
-      @keyframes floatSlow {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
-      }
-      @keyframes pulseHeart {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.12); }
-      }
-      @keyframes shimmerSparkle {
-        0%, 100% { opacity: 0.3; transform: scale(0.8); }
-        50% { opacity: 0.9; transform: scale(1.2); }
-      }
-      .floating-island { animation: floatSlow 6s ease-in-out infinite; }
-      .heart-beat { transform-origin: 19px 10px; animation: pulseHeart 3s ease-in-out infinite; }
-      .sparkle-1 { animation: shimmerSparkle 4s ease-in-out infinite; }
-      .sparkle-2 { animation: shimmerSparkle 5s ease-in-out infinite 1.5s; }
-      .sparkle-3 { animation: shimmerSparkle 3.5s ease-in-out infinite 0.8s; }
-    </style>
-
     <!-- Background Gradient -->
     <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FCFAF5"/>
-      <stop offset="45%" stop-color="#FFF6EE"/>
+      <stop offset="50%" stop-color="#FFF6EE"/>
       <stop offset="100%" stop-color="#F2F8F1"/>
     </linearGradient>
 
@@ -42,12 +22,12 @@
       <stop offset="100%" stop-color="#FAF6F0"/>
     </linearGradient>
 
-    <!-- Shadows -->
+    <!-- Drop Shadows -->
     <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#4A3423" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4A3423" flood-opacity="0.10"/>
     </filter>
     <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#3A281A" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#3A281A" flood-opacity="0.09"/>
     </filter>
   </defs>
 
@@ -56,16 +36,16 @@
 
   <!-- Ambient Sparkles -->
   <g opacity="0.6">
-    <circle cx="140" cy="70" r="2.5" fill="#E88B97" class="sparkle-1"/>
-    <circle cx="460" cy="50" r="2" fill="#E5A04D" class="sparkle-2"/>
-    <circle cx="500" cy="220" r="3" fill="#7CAE74" class="sparkle-3"/>
-    <circle cx="100" cy="340" r="2" fill="#D4A755" class="sparkle-2"/>
-    <path d="M430,120 L433,126 L439,129 L433,132 L430,138 L427,132 L421,129 L427,126 Z" fill="#F4BA68" opacity="0.7" class="sparkle-1"/>
-    <path d="M920,80 L923,86 L929,89 L923,92 L920,98 L917,92 L911,89 L917,86 Z" fill="#E88B97" opacity="0.6" class="sparkle-3"/>
+    <circle cx="120" cy="65" r="2.5" fill="#E88B97"/>
+    <circle cx="480" cy="45" r="2" fill="#E5A04D"/>
+    <circle cx="520" cy="220" r="2.5" fill="#7CAE74"/>
+    <circle cx="90" cy="350" r="2" fill="#D4A755"/>
+    <path d="M440,110 L443,116 L449,119 L443,122 L440,128 L437,122 L431,119 L437,116 Z" fill="#F4BA68" opacity="0.7"/>
+    <path d="M930,70 L933,76 L939,79 L933,82 L930,88 L927,82 L921,79 L927,76 Z" fill="#E88B97" opacity="0.6"/>
   </g>
 
-  <!-- LEFT HERO TYPOGRAPHY & INTRO -->
-  <g transform="translate(64, 58)">
+  <!-- ================= LEFT COLUMN: PRODUCT STORY & TYPOGRAPHY ================= -->
+  <g transform="translate(56, 52)">
     <!-- Category Pill -->
     <g transform="translate(0, 0)">
       <rect width="210" height="28" rx="14" fill="#FCEAEB" stroke="#F4C7CD" stroke-width="1.2"/>
@@ -75,7 +55,7 @@
 
     <!-- Brand Wordmark -->
     <text x="0" y="80" font-family="'Playfair Display', Georgia, serif" font-size="48" font-weight="800" fill="#2D241E" letter-spacing="-0.5">
-      MIMORY <tspan fill="#E85D6F" class="heart-beat">♡</tspan>
+      MIMORY <tspan fill="#E85D6F">♡</tspan>
     </text>
 
     <!-- Subtitle / Tagline -->
@@ -84,7 +64,7 @@
     </text>
 
     <!-- Core Emotion Copy -->
-    <text x="0" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#5E5045" line-height="1.6">
+    <text x="0" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#5E5045" line-height="1.6">
       <tspan x="0" dy="0">A living storybook space that turns meaningful moments shared with</tspan>
       <tspan x="0" dy="23">the people who matter into interactive 2.5D worlds you can explore,</tspan>
       <tspan x="0" dy="23">walk through, and gently revisit when life becomes quiet.</tspan>
@@ -92,14 +72,14 @@
 
     <!-- Emotional Promise Card -->
     <g transform="translate(0, 238)">
-      <rect width="420" height="42" rx="10" fill="#FFFFFF" stroke="#E6DDD0" stroke-width="1.2"/>
+      <rect width="440" height="42" rx="10" fill="#FFFFFF" stroke="#E6DDD0" stroke-width="1.2"/>
       <text x="16" y="26" font-family="'Playfair Display', Georgia, serif" font-size="13.5" font-weight="600" fill="#7A4B32" font-style="italic">
         "Don't let one moment rewrite your whole story."
       </text>
     </g>
 
-    <!-- Tech Badges -->
-    <g transform="translate(0, 298)">
+    <!-- Tech Badges Strip -->
+    <g transform="translate(0, 302)">
       <g transform="translate(0, 0)">
         <rect width="92" height="26" rx="7" fill="#FFFFFF" stroke="#DCE4EC" stroke-width="1.2"/>
         <circle cx="13" cy="13" r="4" fill="#02569B"/>
@@ -123,10 +103,12 @@
     </g>
   </g>
 
-  <!-- RIGHT HERO VISUAL (Floating 3D Storybook Living World Diorama) -->
-  <g transform="translate(580, 40)" class="floating-island">
-    <!-- Island Base Ground Shadow -->
-    <ellipse cx="190" cy="300" rx="165" ry="42" fill="#3D2919" opacity="0.10" filter="url(#heroShadow)"/>
+  <!-- ================= RIGHT COLUMN: 3D LIVING WORLD DIORAMA ================= -->
+  <!-- Anchored securely at x=560, y=40 (No CSS transform overrides!) -->
+  <g transform="translate(560, 40)">
+
+    <!-- Island Ground Shadow -->
+    <ellipse cx="190" cy="305" rx="165" ry="42" fill="#3D2919" opacity="0.10" filter="url(#heroShadow)"/>
 
     <!-- Island Underground Layers -->
     <g filter="url(#heroShadow)">
@@ -173,7 +155,7 @@
       </g>
 
       <!-- Floating Heart -->
-      <path d="M 20,8 C 20,5 17,5 17,8 C 17,11 20,13 20,15 C 20,13 23,11 23,8 C 23,5 20,5 20,8 Z" fill="#E85D6F" class="heart-beat"/>
+      <path d="M 20,8 C 20,5 17,5 17,8 C 17,11 20,13 20,15 C 20,13 23,11 23,8 C 23,5 20,5 20,8 Z" fill="#E85D6F"/>
 
       <!-- Girl -->
       <g transform="translate(20, 2)">
@@ -181,8 +163,7 @@
         <path d="M 4,17 L 16,17 L 18,34 L 2,34 Z" fill="#F293A2" stroke="#333" stroke-width="1.5"/>
         <circle cx="10" cy="11" r="9" fill="#FFF0E1" stroke="#333" stroke-width="1.5"/>
         <path d="M 2,8 Q 10,1 18,8" fill="#6A4938" stroke="#333" stroke-width="1.2"/>
-        <circle cx="1" cy="10" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
-        <circle cx="19" cy="10" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
+        <circle cx="10" cy="10" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
         <circle cx="7" cy="11" r="1" fill="#333"/>
         <circle cx="13" cy="11" r="1" fill="#333"/>
       </g>
@@ -197,9 +178,9 @@
       <circle cx="10" cy="9" r="0.8" fill="#483222"/>
     </g>
 
-    <!-- Floating Cards -->
-    <!-- Card 1: Spatial Landmark -->
-    <g transform="translate(10, 30)" filter="url(#cardShadow)">
+    <!-- ================= FLOATING STORYBOOK CARDS ================= -->
+    <!-- Card 1: Spatial Landmark (Top Left of Island) -->
+    <g transform="translate(0, 25)" filter="url(#cardShadow)">
       <rect width="154" height="48" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
       <rect width="30" height="30" x="9" y="9" rx="7" fill="#FFEFEA"/>
       <text x="24" y="29" font-size="15" text-anchor="middle">📍</text>
@@ -207,7 +188,7 @@
       <text x="46" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="500" fill="#8C7969">Spatial Landmark</text>
     </g>
 
-    <!-- Card 2: Hand Holding -->
+    <!-- Card 2: Hand Holding (Bottom Right of Island) -->
     <g transform="translate(230, 235)" filter="url(#cardShadow)">
       <rect width="146" height="46" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
       <rect width="28" height="28" x="9" y="9" rx="7" fill="#FCEAEB"/>
@@ -216,8 +197,8 @@
       <text x="44" y="37" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600" fill="#5F9E52">Paired Walk Engine</text>
     </g>
 
-    <!-- Card 3: mimory_plus Verified -->
-    <g transform="translate(240, 20)" filter="url(#cardShadow)">
+    <!-- Card 3: mimory_plus Verified (Top Right of Island) -->
+    <g transform="translate(235, 15)" filter="url(#cardShadow)">
       <rect width="144" height="44" rx="10" fill="#FEF8ED" stroke="#F6D49F" stroke-width="1.5"/>
       <circle cx="22" cy="22" r="10" fill="#F4BA44"/>
       <text x="22" y="26" font-size="11" text-anchor="middle" fill="#FFFFFF">✨</text>
