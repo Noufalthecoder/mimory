@@ -48,17 +48,17 @@
   <!-- 6 PIPELINE CARDS -->
   <g transform="translate(24, 52)">
 
-    <!-- CARD 1: MOMENT -->
+    <!-- CARD 1: CAMERA ROLL -->
     <g transform="translate(0, 0)" filter="url(#cardShadow)">
       <rect width="138" height="132" rx="12" fill="url(#step1Bg)" stroke="#F5CBB2" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">✨</text>
-      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#B85827" letter-spacing="0.5">01. MOMENT</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Shared Spark</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">📱</text>
+      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="800" fill="#B85827" letter-spacing="0.5">01. CAMERA ROLL</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Scattered Past</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#694D3B">
-        <tspan x="12" dy="0">A real-life moment</tspan>
-        <tspan x="12" dy="13">with someone you</tspan>
-        <tspan x="12" dy="13">deeply care about.</tspan>
+        <tspan x="12" dy="0">Photos &amp; messages</tspan>
+        <tspan x="12" dy="13">lost in endless</tspan>
+        <tspan x="12" dy="13">digital timelines.</tspan>
       </text>
     </g>
 
@@ -71,13 +71,13 @@
     <g transform="translate(152, 0)" filter="url(#cardShadow)">
       <rect width="138" height="132" rx="12" fill="url(#step2Bg)" stroke="#EED89E" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">📸</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">✨</text>
       <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#996D12" letter-spacing="0.5">02. MEMORY</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Keepsake</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Chosen Moment</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#694D3B">
-        <tspan x="12" dy="0">Saved with photo,</tspan>
-        <tspan x="12" dy="13">title, description,</tspan>
-        <tspan x="12" dy="13">and exact date.</tspan>
+        <tspan x="12" dy="0">Selected with love</tspan>
+        <tspan x="12" dy="13">to remember what</tspan>
+        <tspan x="12" dy="13">truly matters.</tspan>
       </text>
     </g>
 
@@ -86,17 +86,17 @@
       <path d="M 0,10 L 7,10 M 4,6 L 8,10 L 4,14" stroke="#C4B099" stroke-width="2" fill="none" stroke-linecap="round"/>
     </g>
 
-    <!-- CARD 3: LIVING WORLD -->
+    <!-- CARD 3: KEEPSAKE -->
     <g transform="translate(304, 0)" filter="url(#cardShadow)">
       <rect width="138" height="132" rx="12" fill="url(#step3Bg)" stroke="#BBD8B4" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">🏡</text>
-      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#3E7D33" letter-spacing="0.5">03. WORLD</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Spatial Place</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">📸</text>
+      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#3E7D33" letter-spacing="0.5">03. KEEPSAKE</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Story Vignette</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#4B6145">
-        <tspan x="12" dy="0">Placed as a physical</tspan>
-        <tspan x="12" dy="13">landmark inside your</tspan>
-        <tspan x="12" dy="13">storybook world.</tspan>
+        <tspan x="12" dy="0">Preserved with photo,</tspan>
+        <tspan x="12" dy="13">milestone story, and</tspan>
+        <tspan x="12" dy="13">exact calendar date.</tspan>
       </text>
     </g>
 
@@ -105,17 +105,17 @@
       <path d="M 0,10 L 7,10 M 4,6 L 8,10 L 4,14" stroke="#C4B099" stroke-width="2" fill="none" stroke-linecap="round"/>
     </g>
 
-    <!-- CARD 4: MEMORY WALK -->
+    <!-- CARD 4: LANDMARK -->
     <g transform="translate(456, 0)" filter="url(#cardShadow)">
       <rect width="138" height="132" rx="12" fill="url(#step4Bg)" stroke="#ECC2CA" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">🚶‍♀️</text>
-      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#B34254" letter-spacing="0.5">04. WALK</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Explore Together</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">📍</text>
+      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#B34254" letter-spacing="0.5">04. LANDMARK</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Spatial Anchor</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#694149">
-        <tspan x="12" dy="0">Walk using 2.5D</tspan>
-        <tspan x="12" dy="13">joystick &amp; hold</tspan>
-        <tspan x="12" dy="13">hands along paths.</tspan>
+        <tspan x="12" dy="0">Planted as a physical</tspan>
+        <tspan x="12" dy="13">landmark along your</tspan>
+        <tspan x="12" dy="13">scenic world paths.</tspan>
       </text>
     </g>
 
@@ -124,17 +124,17 @@
       <path d="M 0,10 L 7,10 M 4,6 L 8,10 L 4,14" stroke="#C4B099" stroke-width="2" fill="none" stroke-linecap="round"/>
     </g>
 
-    <!-- CARD 5: REVISIT -->
+    <!-- CARD 5: LIVING WORLD -->
     <g transform="translate(608, 0)" filter="url(#cardShadow)">
       <rect width="138" height="132" rx="12" fill="url(#step5Bg)" stroke="#B6D1EE" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">💌</text>
-      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#2963A0" letter-spacing="0.5">05. REVISIT</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Relive the Story</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">🏡</text>
+      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="800" fill="#2963A0" letter-spacing="0.5">05. LIVING WORLD</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Dynamic Realm</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#44576B">
-        <tspan x="12" dy="0">Tap any nearby</tspan>
-        <tspan x="12" dy="13">landmark to open</tspan>
-        <tspan x="12" dy="13">the detail sheet.</tspan>
+        <tspan x="12" dy="0">Atmosphere, seasons,</tspan>
+        <tspan x="12" dy="13">and weather bloom</tspan>
+        <tspan x="12" dy="13">around your story.</tspan>
       </text>
     </g>
 
@@ -143,17 +143,17 @@
       <path d="M 0,10 L 7,10 M 4,6 L 8,10 L 4,14" stroke="#C4B099" stroke-width="2" fill="none" stroke-linecap="round"/>
     </g>
 
-    <!-- CARD 6: GROW -->
+    <!-- CARD 6: MEMORY WALK -->
     <g transform="translate(760, 0)" filter="url(#cardShadow)">
       <rect width="144" height="132" rx="12" fill="url(#step6Bg)" stroke="#E5C78E" stroke-width="1.2"/>
       <rect width="36" height="36" x="12" y="12" rx="9" fill="#FFFFFF" opacity="0.9"/>
-      <text x="30" y="36" font-size="18" text-anchor="middle">🌸</text>
-      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#996817" letter-spacing="0.5">06. GROW</text>
-      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Living Atmosphere</text>
+      <text x="30" y="36" font-size="18" text-anchor="middle">🚶‍♀️</text>
+      <text x="12" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="800" fill="#996817" letter-spacing="0.5">06. MEMORY WALK</text>
+      <text x="12" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#3D291C">Shared Journey</text>
       <text x="12" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="400" fill="#695133">
-        <tspan x="12" dy="0">World boundaries,</tspan>
-        <tspan x="12" dy="13">weather &amp; flora scale</tspan>
-        <tspan x="12" dy="13">with your story.</tspan>
+        <tspan x="12" dy="0">Walk together along</tspan>
+        <tspan x="12" dy="13">winding paths and</tspan>
+        <tspan x="12" dy="13">hold hands in 2.5D.</tspan>
       </text>
     </g>
   </g>

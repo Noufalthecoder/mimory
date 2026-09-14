@@ -4,7 +4,11 @@
 
 <br/><br/>
 
-[**The Human Problem**](#sometimes-one-moment-makes-us-forget-all-the-others) • [**The Living World Idea**](#what-if-your-memories-had-a-place-to-live) • [**The Emotional Loop**](#the-emotional-loop) • [**Memory Walk**](#signature-experience-memory-walk) • [**System Architecture**](#system-architecture) • [**RevenueCat Monetization**](#revenuecat--mimory-monetization) • [**Verification**](#verification--test-suite) • [**Quickstart**](#getting-started)
+### *MIMORY turns the moments you share with the people you love into little worlds you can revisit.*
+
+<br/>
+
+[**The Problem**](#sometimes-one-moment-makes-us-forget-all-the-others) • [**The Living World**](#what-if-your-memories-had-a-place-to-live) • [**Product Transformation**](#the-product-transformation) • [**Real Experience**](#the-core-product-experience) • [**The Emotional Loop**](#the-emotional-loop) • [**Memory Walk**](#signature-experience-memory-walk) • [**System Architecture**](#system-architecture) • [**RevenueCat Monetization**](#revenuecat-monetization--mimory) • [**Verification**](#verification--test-suite) • [**Quickstart**](#getting-started)
 
 </div>
 
@@ -12,45 +16,59 @@
 
 ## Sometimes one moment makes us forget all the others.
 
-People regularly capture meaningful moments with the people they care about: photos, messages, trips, inside jokes, and quiet everyday memories.
+We regularly keep memories of the people who matter to us.
 
-Yet those moments usually disappear into chronological camera rolls, endless message threads, and forgotten cloud storage.
+Photos. Trips. Birthdays. Inside jokes. Messages. Small everyday moments.
 
-More importantly, relationships naturally go through quiet periods:
-- Life becomes busy.
-- Someone moves away.
+Yet those memories usually end up scattered across camera rolls, endless chat histories, and forgotten cloud folders.
+
+And relationships naturally have quiet moments:
+- Life gets busy.
+- People move away.
 - Communication slows down.
-- A small misunderstanding happens.
+- Sometimes there is a small misunderstanding.
 
-In those moments, it is easy to become focused on the latest quietness or conflict, temporarily forgetting the much larger, warmer story already built together.
+In those moments, it is easy to focus entirely on what is happening right now and temporarily forget the much larger story that came before it.
 
-> ### *MIMORY doesn't judge your relationships. MIMORY remembers them with you.*
+MIMORY is built around a simple thought:
 
-MIMORY preserves meaningful memories inside dedicated, living worlds. When a world has been quiet for a while, MIMORY can gently surface an older moment worth remembering—not as a guilt-driven relationship analysis, but as a gentle reminder of the foundation that already exists.
+> ### *What if the memories we already made could gently remind us of the bigger story?*
 
-<br/>
+MIMORY does not judge the relationship.  
+MIMORY does not diagnose conflict.  
+MIMORY does not calculate relationship health.  
 
-<div align="center">
-  <img src="assets/docs/emotional_loop.svg" alt="The Emotional Loop of MIMORY" width="100%"/>
-</div>
+**MIMORY simply remembers with you.**
 
-<br/>
+When a world becomes quiet, MIMORY can gently surface a meaningful memory from the past:
+
+> *"Your world has been a little quiet. Here's a little moment worth remembering. ♡"*
+
+The intention is not to pressure anyone. It is simply to remember the good that already exists.
 
 ---
 
 ## What if your memories had a place to live?
 
-MIMORY gives memories a spatial, emotional presence instead of leaving them as a flat chronological list:
+Instead of leaving memories trapped inside flat chronological lists, MIMORY gives each meaningful relationship its own dedicated, living world:
 
 ```
   Camera Roll  ──→  Living Storybook World
-        Photo  ──→  Interactive Keepsake
-       Memory  ──→  Physical Landmark
+        Photo  ──→  Heartfelt Story Keepsake
+       Memory  ──→  Interactive Physical Landmark
  Relationship  ──→  Dedicated World (Partner, Best Friend, Family)
-     Timeline  ──→  Story You Can Walk Through
+     Timeline  ──→  Scenic Journey You Can Walk Through
 ```
 
-When you create a world for someone important, you choose customizable chibi avatars and select a storybook aesthetic (*Cozy Town*, *Starlit Forest*, *Blooming Meadow*, or *Sunlit Valley*). As you add memories, they take root as interactive physical landmarks along scenic walking paths.
+When you create a world for someone important, you design customizable chibi avatars and choose an evocative storybook aesthetic (*Cozy Town*, *Starlit Forest*, *Blooming Meadow*, or *Sunlit Valley*).
+
+As you add milestones and everyday moments, they take root as interactive physical landmarks along cobblestone walking paths.
+
+---
+
+## The Product Transformation
+
+MIMORY transforms scattered digital files into a spatial, living sanctuary you can walk through together:
 
 <br/>
 
@@ -60,50 +78,101 @@ When you create a world for someone important, you choose customizable chibi ava
 
 <br/>
 
+```
+  01. CAMERA ROLL   ──→  Photos and messages scattered across endless folders
+  02. MEMORY        ──→  A meaningful moment chosen with intention and care
+  03. KEEPSAKE      ──→  Preserved with photo, story vignette, and exact calendar date
+  04. LANDMARK      ──→  Planted as an interactive physical anchor along walking paths
+  05. LIVING WORLD  ──→  Atmospheric time of day, changing weather, and wildlife bloom
+  06. MEMORY WALK   ──→  A shared 2.5D journey walked together holding hands
+```
+
 ---
 
 ## The Core Product Experience
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🏡 1. Dedicated Relationship Worlds</h3>
-      <p>Create separate, personal worlds for each relationship (Partner, Best Friend, Family). Customize chibi avatars with individualized hairstyles, hair colors, skin tones, and outfits.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📸 2. Keepsake Photo &amp; Story Preservation</h3>
-      <p>Preserve milestones as photo keepsakes or written story vignettes. Photos are persisted in app-controlled local sandbox storage, surviving device restarts and OS updates.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🚶‍♀️ 3. 2.5D Interactive Memory Walk</h3>
-      <p>Explore your world using a responsive 360° virtual joystick. Stroll along cobblestone paths, follow directional signposts pointing to past memories, and hold hands with your companion character.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📍 4. Proximity Landmark Reliving</h3>
-      <p>As you approach memory landmarks in the world, they illuminate with subtle proximity glows. Tapping a landmark smoothly presents the keepsake sheet with its story, date, and original photo.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌤️ 5. Real-Time Atmospheric Conditions</h3>
-      <p>Worlds reflect natural time cycles (Morning, Day, Sunset, Night) and seasonal weather (Rain with shared umbrellas, Winter snowfall with cozy accessories, and evening fireflies).</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>✨ 6. Organic World Expansion</h3>
-      <p>As you add memories, the world dynamically scales its terrain boundaries, environmental flora density, and companion animal behaviors.</p>
-    </td>
-  </tr>
-</table>
+MIMORY guides you through five cohesive stages of relationship memory keeping:
+
+<br/>
+
+### 1. CREATE — Dedicated Relationship Worlds & Avatars
+Create separate, personal worlds for each relationship (*Partner*, *Best Friend*, *Family*). Design customizable chibi avatars with individualized hairstyles, hair colors, skin tones, and outfits that represent you and your person.
+
+```
+  Welcome  ──→  Choose Relationship  ──→  Customize Avatars  ──→  Select Storybook Theme
+```
+
+### 2. KEEP — Keepsake Photos & Story Vignettes
+Preserve milestones as photo keepsakes or written story vignettes. Photos are captured and persisted in app-controlled local sandbox storage (`/mimory_photos/`), surviving device restarts and operating system updates.
+
+```
+  Add Memory  ──→  Attach Photo  ──→  Write Milestone Note  ──→  Set Date  ──→  Save Keepsake
+```
+
+### 3. EXPLORE — Living World & 2.5D Memory Walk
+Stroll through your world using a responsive 360° virtual joystick. Cobblestone paths wind past scenic landmarks, directional signposts point toward past milestones, and companion characters walk side-by-side with toggleable hand-holding.
+
+```
+  Enter World  ──→  Virtual Joystick  ──→  Follow Path  ──→  Hold Hands  ──→  Share Umbrella
+```
+
+### 4. REMEMBER — Landmark Reliving & Gentle Resurfacing
+As you approach memory landmarks in the world, they illuminate with subtle proximity glows (< 45px). Tapping any landmark smoothly opens its keepsake sheet with the original photo, personal story, and calendar date. When a world has been quiet, MIMORY gently surfaces an older memory to restore perspective.
+
+```
+  Approach Landmark  ──→  Proximity Glow  ──→  Open Keepsake Sheet  ──→  Relive the Moment
+```
+
+### 5. GROW — MIMORY+ Entitlement Experience
+Subscribing to MIMORY+ unlocks unlimited relationship worlds, dynamic living weather conditions (soothing rain, winter snowfall, starry night sky), and storybook garden companions (rabbit companions and paired wildlife).
+
+```
+  MIMORY+ Paywall  ──→  RevenueCat Purchase  ──→  Verified Entitlement  ──→  "World Just Grew"
+```
+
+<br/>
+
+---
+
+## The Emotional Loop
+
+MIMORY's emotional loop is designed to protect perspective during quiet seasons without pressure, judgment, or surveillance:
+
+<br/>
+
+<div align="center">
+  <img src="assets/docs/emotional_loop.svg" alt="The Emotional Loop of MIMORY" width="100%"/>
+</div>
+
+<br/>
+
+```
+  A meaningful moment
+          ↓
+     saved in MIMORY
+          ↓
+     becomes part of the world
+          ↓
+     life continues
+          ↓
+    the world becomes quiet
+          ↓
+   MIMORY gently resurfaces an older memory
+          ↓
+     the bigger story comes back
+          ↓
+     remember and reconnect
+```
+
+MIMORY does not claim to fix relationships or enforce communication. It simply preserves what you have built together, so that in quiet times, the warmth of the bigger story is never lost.
 
 ---
 
 ## Signature Experience: Memory Walk
 
-Instead of scrolling through your memories, **Memory Walk** lets you walk through them together.
+Instead of scrolling through your memories, **Memory Walk** lets you walk through them.
 
-Memories become physical landmarks along winding paths. Direction signposts point the way toward milestones, and both characters explore in real time, sharing an umbrella when it rains or holding hands along the journey.
+Memories become physical landmarks along scenic paths. Direction signposts point the way toward milestones, and both characters explore in real time—sharing an umbrella when it rains, wearing warm scarves in winter snow, or holding hands along the journey.
 
 <br/>
 
@@ -113,17 +182,20 @@ Memories become physical landmarks along winding paths. Direction signposts poin
 
 <br/>
 
-### Spatial Math Highlights
+### Under the Hood: Spatial Projection & Math
 
-1. **3D Perspective Camera (`Camera3D`)**: Mathematically projects 3D world coordinates `(x, y, z)` into screen space `(dx, dy)` using focal length (`500.0`) and pitch angles (`0.35 rad`), applying painter's algorithm depth sorting and distance scaling (`scale = focal / depth`).
-2. **Smooth Follow with Soft Dead-Zone**: A cinematic camera dead-zone (`dx: 20`, `dy: 25`) absorbs small joystick micro-movements, preventing camera jitter while smoothly following players via damped lag interpolation (`lagT = 0.15`).
-3. **Synchronized Paired Controller**: Custom `CustomPainter` character models synchronize leg swing cycles, direction facing, shared umbrella holding during rain, and hand-holding positions.
+Memory Walk uses a custom programmatic canvas renderer built on Flutter's `CustomPainter` to deliver native 60fps performance without heavy 3D asset bundles:
+
+1. **3D Perspective Camera (`Camera3D`)**: Mathematically projects 3D world coordinates `(x, y, z)` into screen coordinates `(dx, dy)` using focal length (`500.0`) and pitch angles (`0.35 rad`), applying painter's algorithm depth sorting and distance scaling:
+   $$\text{scale} = \frac{\text{focalLength}}{y_{\text{camera}} + \text{focalLength}}$$
+2. **Smooth Follow with Soft Dead-Zone**: A cinematic camera dead-zone (`dx: 20`, `dy: 25`) absorbs small joystick micro-movements, preventing camera jitter while smoothly tracking characters via damped lag interpolation (`lagT = 0.15`).
+3. **Synchronized Paired Controller**: Custom character models synchronize leg swing cycles, direction facing, shared umbrella holding during rain, and hand-holding positions based on 360° virtual joystick input.
 
 ---
 
 ## System Architecture
 
-MIMORY is engineered as a local-first, modular Flutter application with strict domain separation, reactive service orchestration, and verified entitlement monetization.
+MIMORY is engineered as a local-first, modular Flutter application with strict domain separation, reactive service orchestration, and verified entitlement monetization:
 
 <br/>
 
@@ -133,18 +205,18 @@ MIMORY is engineered as a local-first, modular Flutter application with strict d
 
 <br/>
 
-### Architectural Principles
+### Architectural Layers
 
-- **Presentation Layer (`lib/features/`)**: Self-contained feature modules managing screen lifecycles, user inputs, and navigation without coupling to data storage mechanisms.
-- **Core Design Tokens (`lib/core/`)**: Unified storybook design system with tactile pill buttons, custom text fields, and soft elevation tokens in `AppTheme`.
-- **Domain State Singletons (`lib/services/`)**: `WorldService` orchestrates user session, world management, and 1:N memory relations. `RevenueCatService` evaluates verified entitlement streams.
-- **Local-First Reliability**: `StorageService` serializes data to `SharedPreferences` while `path_provider` sandboxes high-resolution photos in `/mimory_photos/`, eliminating mandatory cloud dependencies.
+- **Presentation & Feature Modules (`lib/features/`)**: Self-contained feature packages (`auth`, `world`, `memory`, `monetization`) managing screen lifecycles, user inputs, and navigation without coupling to data storage mechanisms.
+- **Domain State Singletons (`lib/services/`)**: `WorldService` orchestrates active user session, world management, and 1:N memory relations. `RevenueCatService` evaluates verified entitlement streams.
+- **Local-First Core & Media Sandbox (`StorageService`)**: `SharedPreferences` serializes structured JSON worlds and memories, while `path_provider` sandboxes high-resolution photos in `/mimory_photos/`, eliminating mandatory cloud dependencies.
+- **Monetization Infrastructure (`purchases_flutter`)**: Official RevenueCat Flutter SDK handles offerings delivery, receipt verification, and entitlement evaluation.
 
 ---
 
-## RevenueCat & MIMORY+ Monetization
+## RevenueCat Monetization & MIMORY+
 
-MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.12.0`) to power the **MIMORY+** premium experience for the RevenueCat Shipaton.
+MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.12.0`) to power the **MIMORY+** premium experience for the RevenueCat Shipaton:
 
 <br/>
 
@@ -156,23 +228,36 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
 
 ### Monetization Engineering
 
-- **Entitlement-Driven Access**: Premium state is strictly evaluated via RevenueCat's verified `CustomerInfo.entitlements['mimory_plus'].isActive`. There are zero local bypass flags or unverified states.
-- **Truthful Capability Model (`MimoryPlusCapability`)**: Paywalls and unlock celebration screens dynamically query `MimoryPlusCapability.unlockedForPlus`, presenting only genuinely implemented capabilities (`implemented == true`).
+- **Entitlement-Driven Access**: Premium status is strictly evaluated via RevenueCat's verified `CustomerInfo.entitlements['mimory_plus'].isActive`. Premium access is controlled by entitlement state, not a local boolean.
+- **Truthful Capability Model (`MimoryPlusCapability`)**: Paywalls and celebration screens dynamically query `MimoryPlusCapability.unlockedForPlus`, presenting only genuinely implemented capabilities (`implemented == true`).
 - **Reactive State Propagation**: `RevenueCatService` extends `ChangeNotifier`, broadcasting instant entitlement updates across the UI upon purchase or restore.
-- **Test Store / Sandbox Ready**: Pre-configured with a public Test Store key (`test_aToLAmiQXjnnqPxxxISoWwxRVAK`) for immediate sandbox evaluation without requiring live App Store / Google Play merchant credentials.
+- **Sandbox & Test Store Ready**: Fully configured for instant sandbox and Test Store evaluation without requiring live App Store or Google Play merchant accounts.
 
 ---
 
 ## Engineering Decisions
 
-- **Local-First Reliability**: Memories are personal and sacred. All worlds, memories, and photos persist locally on device with zero cloud synchronization requirements for the core product experience.
-- **Strict 1:N World-Memory Isolation**: Each memory is bound to a persistent `worldId` via deterministic UUIDv4 identifiers, guaranteeing that memories never leak between separate relationships.
-- **Custom Canvas Rendering**: Programmatic Flutter `CustomPainter` rendering delivers native 60fps mobile canvas performance on iOS and Android without heavy 3D asset bundles.
-- **Clean Service Boundaries**: Services expose clean async contracts (`createWorld`, `purchasePackage`, `persistPhoto`) and emit reactive notifications via `ChangeNotifier`.
+### Local-First Persistence
+- **What we did**: All worlds, memories, and photos persist locally on device via `SharedPreferences` and sandboxed document storage.
+- **Why we did it**: Memories are deeply personal. The core experience does not require a cloud backend or account creation to create worlds, save memories, or revisit them.
+
+### Strict 1:N World-Memory Isolation
+- **What we did**: Every memory is bound to a persistent `worldId` using deterministic UUIDv4 identifiers.
+- **Why we did it**: Guarantees that memories never leak between separate relationships (Partner, Best Friend, Family), maintaining absolute privacy and data integrity.
+
+### Custom Canvas 2.5D Rendering
+- **What we did**: Built a lightweight 2.5D perspective engine using Flutter's native `CustomPainter` and mathematical vector projection.
+- **Why we did it**: Delivers smooth 60fps mobile canvas performance on iOS and Android without the overhead, download size, and battery drain of heavy 3D game engines.
+
+### Clean Service Boundaries
+- **What we did**: Services expose clean async interfaces (`createWorld`, `purchasePackage`, `persistPhoto`) and emit reactive notifications via `ChangeNotifier`.
+- **Why we did it**: Keeps UI widgets completely decoupled from storage mechanisms, SDK implementation details, and network lifecycles.
 
 ---
 
 ## Data Model
+
+MIMORY enforces a clean, deterministic relational model between worlds, memories, and customized characters:
 
 ```
  ┌───────────────────────────────────┐
@@ -180,12 +265,12 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
  ├───────────────────────────────────┤
  │ id: String (UUID)                 │
  │ name: String                      │
- │ relationshipType: String          │
+ │ relationshipType: String          │  (Partner | Best Friend | Family)
  │ personName: String                │
  │ nickname: String?                 │
  │ userAvatarId: String              │
  │ companionAvatarId: String         │
- │ worldStyle: String                │
+ │ worldStyle: String                │  (Cozy Town | Forest | Meadow | Valley)
  │ createdAt: DateTime               │
  └─────────────────┬─────────────────┘
                    │
@@ -219,10 +304,10 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
 
 | Layer | Technology | Architectural Rationale |
 |---|---|---|
-| **Framework** | Flutter 3.x / Dart | Single cross-platform codebase delivering native 60fps canvas rendering on iOS and Android. |
-| **Monetization** | RevenueCat SDK (`purchases_flutter: ^10.12.0`) | Server-side receipt validation, offerings delivery, and cross-platform entitlement management. |
+| **Framework** | Flutter 3.x / Dart SDK | Cross-platform codebase delivering native 60fps canvas rendering on iOS and Android. |
+| **Monetization** | RevenueCat (`purchases_flutter: ^10.12.0`) | Verified entitlement evaluation, offerings delivery, and cross-platform purchase handling. |
 | **Local Persistence** | `shared_preferences: ^2.5.5` | Fast, lightweight local key-value persistence for structured JSON worlds, memories, and sessions. |
-| **Document Storage** | `path_provider: ^2.1.6` | App-controlled sandboxed document storage for local image and photo preservation across app restarts. |
+| **Document Storage** | `path_provider: ^2.1.6` | App-controlled sandboxed document directory for persistent keepsake photo storage. |
 | **Typography** | `google_fonts: ^6.2.1` | Curated storybook typography pairing Playfair Display headings with Plus Jakarta Sans body copy. |
 | **Media Capture** | `image_picker: ^1.0.7` | Native gallery image selection with safe sandbox persistence. |
 | **Identity** | `uuid: ^4.3.3` | Cryptographically secure UUIDv4 generation for deterministic entity relationships. |
@@ -234,10 +319,10 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
 ```
 lib/
 ├── core/
-│   ├── theme/               # Storybook typography, color palettes, shadows
+│   ├── theme/               # Storybook typography, color palettes, elevation tokens
 │   └── widgets/             # Tactile buttons, text fields, cards, branding icons
 ├── features/
-│   ├── auth/                # Welcome screen, mock Google & Email session persistence
+│   ├── auth/                # Welcome screen, mock session persistence
 │   ├── memory/              # Keepsake creation wizard, photo picker, detail sheet
 │   ├── monetization/        # MIMORY+ paywall, celebration screen, capability cards
 │   └── world/               # World creation wizard, avatar selector, world overview
@@ -251,7 +336,7 @@ lib/
 │   ├── world_environment_config.dart # Atmospheric lighting, time, season tokens
 │   └── world_point.dart           # 3D spatial vector and distance math
 ├── services/
-│   ├── revenue_cat_config.dart    # Public SDK keys and entitlement definitions
+│   ├── revenue_cat_config.dart    # SDK configuration and entitlement identifiers
 │   ├── revenue_cat_service.dart   # Purchases SDK singleton & entitlement stream
 │   ├── storage_service.dart       # SharedPreferences and document directory storage
 │   └── world_service.dart         # Core application state manager
@@ -266,51 +351,59 @@ lib/
 
 ## Verification & Test Suite
 
-MIMORY includes comprehensive automated test suites covering data persistence, memory boundary isolation, 3D camera projection, weather algorithms, and RevenueCat integration.
+MIMORY maintains an automated test suite verifying data persistence, memory boundary isolation, 3D camera projection, atmospheric weather algorithms, and RevenueCat integration:
 
 ```
 test/
-├── product_functionality_test.dart   # World/memory persistence, session isolation, routing
-├── living_world_test.dart            # Time-of-day/season algorithms, ambient weather layers
-├── stable_memory_walk_test.dart      # Memory Walk joystick, hand holding, signboard constraints
-├── third_person_world_test.dart      # Camera3D perspective math, deadzone follow, depth sorting
-└── revenue_cat_service_test.dart     # Entitlement matching, singleton consistency, capability truthfulness
+├── product_functionality_test.dart   # World/memory persistence, session isolation, routing (8 tests)
+├── living_world_test.dart            # Time-of-day/season algorithms, ambient weather layers (12 tests)
+├── stable_memory_walk_test.dart      # Memory Walk joystick, hand holding, signboard constraints (3 tests)
+├── third_person_world_test.dart      # Camera3D perspective math, deadzone follow, depth sorting (8 tests)
+├── revenue_cat_service_test.dart     # Entitlement matching, singleton consistency, capability truthfulness (5 tests)
+└── widget_test.dart                  # App bootstrap and smoke test (1 test)
 ```
 
 ### Verified Test Results
 
 ```
 $ flutter analyze
-✓ No issues found! (0 warnings, 0 errors)
+Analyzing mimory...
+No issues found! (ran in 13.4s)
 
 $ flutter test
-✓ test/product_functionality_test.dart: All 8 tests passed
-✓ test/living_world_test.dart: All 11 tests passed
-✓ test/stable_memory_walk_test.dart: All 3 tests passed
-✓ test/third_person_world_test.dart: All 8 tests passed
-✓ test/revenue_cat_service_test.dart: All 5 tests passed
-✓ test/widget_test.dart: Passed
-────────────────────────────────────────────
-✓ 36 / 36 tests passed
+✓ test/living_world_test.dart: All 12 tests passed!
+✓ test/product_functionality_test.dart: All 8 tests passed!
+✓ test/revenue_cat_service_test.dart: All 5 tests passed!
+✓ test/third_person_world_test.dart: All 8 tests passed!
+✓ test/stable_memory_walk_test.dart: All 3 tests passed!
+✓ test/widget_test.dart: All 1 tests passed!
+────────────────────────────────────────────────────────
+✓ 37 / 37 tests passed
 ```
+
+### What the Tests Protect
+- **Persistence & Isolation**: Confirms that memories and worlds are saved with stable identifiers and never cross-contaminate separate relationships.
+- **Memory Walk Spatial Engine**: Validates Camera3D coordinate projection, dead-zone lag interpolation, signboard constraints, and hand-holding toggles.
+- **Living Atmosphere**: Validates atmospheric lighting, weather particle layer rendering (rain and snow), and shared accessory logic.
+- **RevenueCat Integration**: Validates entitlement matching for `mimory_plus`, singleton consistency, and that only genuinely implemented capabilities appear in the paywall.
 
 ---
 
 ## Current Status
 
-To ensure complete transparency and trustworthiness, here is the verified status of each component in the repository:
+To ensure complete transparency and trustworthiness, here is the verified status of each capability in the repository:
 
 | Capability / Component | Implementation Status | Notes |
 |---|---|---|
-| **Flutter Mobile App** | ✅ Implemented | Tested on Android & iOS |
-| **World Creation & Avatars** | ✅ Implemented | 4 world styles, customizable avatar pairs |
-| **Keepsake Memory Storage** | ✅ Implemented | Photos & written stories with persistent local storage |
-| **Interactive Memory Walk** | ✅ Implemented | 3D perspective terrain, joystick, paired couple walk |
-| **Living Atmosphere** | ✅ Implemented | Real-time time of day, rain, snow, fireflies, rabbits |
-| **RevenueCat MIMORY+ Flow** | ✅ Implemented | Monthly, Yearly, Lifetime packages & entitlement checks |
-| **RevenueCat Test Store** | ✅ Configured | Ready for testing without requiring live merchant setup |
-| **Cloud Synchronization** | ⏳ Planned | Current architecture is local-first |
-| **Audio Memory Echoes** | ⏳ Planned | Roadmap feature explicitly tagged in capability model |
+| **Flutter Mobile App** | ✓ Implemented | Built with Flutter 3.x & Dart |
+| **World Creation & Avatars** | ✓ Implemented | 4 world styles, customizable avatar pairs |
+| **Keepsake Memory Storage** | ✓ Implemented | Photos & written stories with persistent local storage |
+| **Interactive Memory Walk** | ✓ Implemented | 2.5D perspective terrain, virtual joystick, paired couple walk |
+| **Living Atmosphere** | ✓ Implemented | Time cycles, rain with shared umbrella, winter snow, fireflies |
+| **RevenueCat MIMORY+ Flow** | ✓ Implemented | Monthly, Yearly, Lifetime packages & verified entitlement checks |
+| **RevenueCat Test Store** | ◐ Configured | Ready for sandbox evaluation |
+| **Cloud Synchronization** | → Planned | Current architecture is local-first |
+| **Audio Memory Echoes** | → Planned | Roadmap capability explicitly tagged in capability model |
 
 ---
 
@@ -339,30 +432,31 @@ flutter run
 
 ---
 
-## RevenueCat Setup & Testing
+## RevenueCat Setup & Sandbox Testing
 
-MIMORY comes pre-configured with a RevenueCat Test Store public SDK key (`test_aToLAmiQXjnnqPxxxISoWwxRVAK`) for development and evaluation.
+MIMORY is ready out-of-the-box for evaluation with RevenueCat.
 
 ### Testing Purchases in Sandbox / Test Store:
 1. Launch MIMORY on a physical device or emulator.
 2. Tap the **MIMORY+** button in the header or world screen.
 3. Select any offering (**Monthly**, **Yearly**, or **Lifetime**).
 4. Complete the transaction using RevenueCat's sandbox/test sheet.
-5. The application will immediately verify the `mimory_plus` entitlement and transition into the **"Your little world just grew. ♡"** celebration screen.
+5. The application immediately evaluates the verified `mimory_plus` entitlement and transitions into the **"Your little world just grew. ♡"** celebration screen.
 
 ### Configuring Your Own RevenueCat Project:
 1. Create a project at [app.revenuecat.com](https://app.revenuecat.com).
 2. Create an Entitlement with identifier `mimory_plus`.
 3. Set up your products and attach them to a default offering.
-4. Replace the public SDK keys in `lib/services/revenue_cat_config.dart`.
+4. Add your public SDK keys in `lib/services/revenue_cat_config.dart`.
 
 ---
 
 ## Privacy & Data Handling
 
-- **Local-First Storage**: All world details, memory photos, notes, and avatars remain stored locally on your device.
-- **Zero Third-Party Data Tracking**: Photos and personal stories are never shared with advertising networks or third-party servers.
-- **Secure Purchases**: Subscription receipts and customer info are validated securely through RevenueCat and platform payment channels.
+- **Local-First Storage**: MIMORY is currently local-first. All world details, memory photos, notes, and avatars are stored locally on your device.
+- **Media Sandbox**: Photos are saved in the app-controlled local document directory, isolated from external app access.
+- **No Third-Party Ad Trackers**: Photos and personal stories are not shared with advertising networks.
+- **Secure Purchases**: Subscription receipts and customer info are validated securely through RevenueCat and official platform payment channels.
 
 ---
 
