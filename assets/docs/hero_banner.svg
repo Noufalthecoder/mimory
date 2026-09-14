@@ -1,206 +1,195 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420">
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCF9F3"/>
-      <stop offset="50%" stop-color="#FFF5EC"/>
-      <stop offset="100%" stop-color="#F4F8F3"/>
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes pulseHeart {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.12); }
+      }
+      @keyframes shimmerSparkle {
+        0%, 100% { opacity: 0.3; transform: scale(0.8); }
+        50% { opacity: 0.9; transform: scale(1.2); }
+      }
+      .floating-island { animation: floatSlow 6s ease-in-out infinite; }
+      .heart-beat { transform-origin: 19px 10px; animation: pulseHeart 3s ease-in-out infinite; }
+      .sparkle-1 { animation: shimmerSparkle 4s ease-in-out infinite; }
+      .sparkle-2 { animation: shimmerSparkle 5s ease-in-out infinite 1.5s; }
+      .sparkle-3 { animation: shimmerSparkle 3.5s ease-in-out infinite 0.8s; }
+    </style>
+
+    <!-- Background Gradient -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5"/>
+      <stop offset="45%" stop-color="#FFF6EE"/>
+      <stop offset="100%" stop-color="#F2F8F1"/>
     </linearGradient>
-    <linearGradient id="islandGrass" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#A2D696"/>
-      <stop offset="50%" stop-color="#80BE74"/>
-      <stop offset="100%" stop-color="#6AA85E"/>
+
+    <!-- Island Gradients -->
+    <linearGradient id="meadowTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A4DB97"/>
+      <stop offset="50%" stop-color="#84C478"/>
+      <stop offset="100%" stop-color="#6DAE60"/>
     </linearGradient>
-    <linearGradient id="islandEarth" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#CBB596"/>
-      <stop offset="100%" stop-color="#A58E6F"/>
-    </linearGradient>
-    <linearGradient id="rosePill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FDE8EA"/>
-      <stop offset="100%" stop-color="#FAD2D8"/>
-    </linearGradient>
-    <linearGradient id="goldPill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FEF5DC"/>
-      <stop offset="100%" stop-color="#FCE6B2"/>
-    </linearGradient>
-    <linearGradient id="skyPill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E8F2FA"/>
-      <stop offset="100%" stop-color="#D1E5F7"/>
+    <linearGradient id="earthCrust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D1BC9D"/>
+      <stop offset="100%" stop-color="#9C8262"/>
     </linearGradient>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#FAF7F2"/>
+      <stop offset="100%" stop-color="#FAF6F0"/>
     </linearGradient>
 
-    <!-- Filters -->
-    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#553322" flood-opacity="0.08"/>
+    <!-- Shadows -->
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#4A3423" flood-opacity="0.09"/>
     </filter>
     <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#3D2C1E" flood-opacity="0.10"/>
-    </filter>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#3A281A" flood-opacity="0.09"/>
     </filter>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="960" height="380" rx="20" fill="url(#bgGrad)"/>
-  <rect width="958" height="378" x="1" y="1" rx="19" fill="none" stroke="#EFE5D5" stroke-width="2"/>
+  <!-- Canvas Container -->
+  <rect width="1000" height="420" rx="24" fill="url(#heroBg)" stroke="#EBDDCF" stroke-width="1.5"/>
 
-  <!-- Subtle Storybook Grid / Sparkles -->
-  <g opacity="0.4">
-    <circle cx="120" cy="60" r="2" fill="#E6A07E"/>
-    <circle cx="440" cy="40" r="1.5" fill="#88B87B"/>
-    <circle cx="480" cy="180" r="2.5" fill="#E88B97"/>
-    <circle cx="80" cy="300" r="2" fill="#D4A755"/>
-    <circle cx="500" cy="320" r="1.5" fill="#88B87B"/>
-    <path d="M420,100 L424,108 L432,112 L424,116 L420,124 L416,116 L408,112 L416,108 Z" fill="#F4BA68" opacity="0.6"/>
-    <path d="M100,160 L102,164 L106,166 L102,168 L100,172 L98,168 L94,166 L98,164 Z" fill="#E88B97" opacity="0.7"/>
-    <path d="M900,60 L903,66 L909,69 L903,72 L900,78 L897,72 L891,69 L897,66 Z" fill="#88B87B" opacity="0.6"/>
+  <!-- Ambient Sparkles -->
+  <g opacity="0.6">
+    <circle cx="140" cy="70" r="2.5" fill="#E88B97" class="sparkle-1"/>
+    <circle cx="460" cy="50" r="2" fill="#E5A04D" class="sparkle-2"/>
+    <circle cx="500" cy="220" r="3" fill="#7CAE74" class="sparkle-3"/>
+    <circle cx="100" cy="340" r="2" fill="#D4A755" class="sparkle-2"/>
+    <path d="M430,120 L433,126 L439,129 L433,132 L430,138 L427,132 L421,129 L427,126 Z" fill="#F4BA68" opacity="0.7" class="sparkle-1"/>
+    <path d="M920,80 L923,86 L929,89 L923,92 L920,98 L917,92 L911,89 L917,86 Z" fill="#E88B97" opacity="0.6" class="sparkle-3"/>
   </g>
 
-  <!-- LEFT HERO CONTENT -->
-  <g transform="translate(56, 50)">
-    <!-- Small Category Pill -->
+  <!-- LEFT HERO TYPOGRAPHY & INTRO -->
+  <g transform="translate(64, 58)">
+    <!-- Category Pill -->
     <g transform="translate(0, 0)">
-      <rect width="186" height="28" rx="14" fill="#FDEAEB" stroke="#F4C7CD" stroke-width="1.2"/>
-      <circle cx="14" cy="14" r="4" fill="#E26D7D"/>
-      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#B33E50" letter-spacing="0.5">LIVING STORYBOOK APP</text>
+      <rect width="210" height="28" rx="14" fill="#FCEAEB" stroke="#F4C7CD" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="4.5" fill="#D95D70"/>
+      <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#A83244" letter-spacing="0.5">LIVING MEMORY EXPERIENCE</text>
     </g>
 
-    <!-- Main Title -->
-    <text x="0" y="74" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="44" font-weight="800" fill="#2A2421" letter-spacing="-0.5">
-      MIMORY <tspan fill="#E85D6F">♡</tspan>
+    <!-- Brand Wordmark -->
+    <text x="0" y="80" font-family="'Playfair Display', Georgia, serif" font-size="48" font-weight="800" fill="#2D241E" letter-spacing="-0.5">
+      MIMORY <tspan fill="#E85D6F" class="heart-beat">♡</tspan>
     </text>
 
-    <!-- Tagline -->
-    <text x="0" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#D36F46" letter-spacing="-0.2">
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" fill="#D36F46" letter-spacing="-0.2">
       Your people. Your moments. Your world.
     </text>
 
-    <!-- Description -->
-    <text x="0" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400" fill="#5C5148" line-height="1.6">
-      <tspan x="0" dy="0">A living memory experience that turns meaningful moments shared</tspan>
-      <tspan x="0" dy="21">with the people who matter into interactive 2.5D storybook worlds</tspan>
-      <tspan x="0" dy="21">you can revisit, walk through, and organically grow together.</tspan>
+    <!-- Core Emotion Copy -->
+    <text x="0" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#5E5045" line-height="1.6">
+      <tspan x="0" dy="0">A living storybook space that turns meaningful moments shared with</tspan>
+      <tspan x="0" dy="23">the people who matter into interactive 2.5D worlds you can explore,</tspan>
+      <tspan x="0" dy="23">walk through, and gently revisit when life becomes quiet.</tspan>
     </text>
 
-    <!-- Tech Badges Strip -->
-    <g transform="translate(0, 222)">
-      <!-- Flutter -->
+    <!-- Emotional Promise Card -->
+    <g transform="translate(0, 238)">
+      <rect width="420" height="42" rx="10" fill="#FFFFFF" stroke="#E6DDD0" stroke-width="1.2"/>
+      <text x="16" y="26" font-family="'Playfair Display', Georgia, serif" font-size="13.5" font-weight="600" fill="#7A4B32" font-style="italic">
+        "Don't let one moment rewrite your whole story."
+      </text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 298)">
       <g transform="translate(0, 0)">
-        <rect width="94" height="28" rx="8" fill="#FFFFFF" stroke="#E2DCD2" stroke-width="1.2"/>
-        <circle cx="14" cy="14" r="4.5" fill="#02569B"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#3D3630">Flutter 3.x</text>
+        <rect width="92" height="26" rx="7" fill="#FFFFFF" stroke="#DCE4EC" stroke-width="1.2"/>
+        <circle cx="13" cy="13" r="4" fill="#02569B"/>
+        <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Flutter 3.x</text>
       </g>
-      <!-- Dart -->
-      <g transform="translate(104, 0)">
-        <rect width="72" height="28" rx="8" fill="#FFFFFF" stroke="#E2DCD2" stroke-width="1.2"/>
-        <circle cx="14" cy="14" r="4.5" fill="#0175C2"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#3D3630">Dart</text>
+      <g transform="translate(100, 0)">
+        <rect width="72" height="26" rx="7" fill="#FFFFFF" stroke="#DCE4EC" stroke-width="1.2"/>
+        <circle cx="13" cy="13" r="4" fill="#0175C2"/>
+        <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Dart</text>
       </g>
-      <!-- RevenueCat -->
-      <g transform="translate(186, 0)">
-        <rect width="124" height="28" rx="8" fill="#FEF6EE" stroke="#F4CFA8" stroke-width="1.2"/>
-        <circle cx="14" cy="14" r="4.5" fill="#E56A38"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#A8441A">RevenueCat</text>
+      <g transform="translate(180, 0)">
+        <rect width="118" height="26" rx="7" fill="#FEF6EE" stroke="#F6D4B0" stroke-width="1.2"/>
+        <circle cx="13" cy="13" r="4" fill="#E56A38"/>
+        <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#A84318">RevenueCat</text>
       </g>
-      <!-- Local-First -->
-      <g transform="translate(320, 0)">
-        <rect width="104" height="28" rx="8" fill="#F2F8F0" stroke="#CCE0C8" stroke-width="1.2"/>
-        <circle cx="14" cy="14" r="4.5" fill="#5F9E52"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#2E6123">Local-First</text>
+      <g transform="translate(306, 0)">
+        <rect width="102" height="26" rx="7" fill="#F2F8F0" stroke="#CCE0C8" stroke-width="1.2"/>
+        <circle cx="13" cy="13" r="4" fill="#5F9E52"/>
+        <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E6123">Local-First</text>
       </g>
     </g>
   </g>
 
-  <!-- RIGHT HERO VISUAL (3D Floating Storybook World Diorama) -->
-  <g transform="translate(560, 30)">
-    <!-- Main Island Shadow -->
-    <ellipse cx="180" cy="275" rx="160" ry="40" fill="#382515" opacity="0.12" filter="url(#softShadow)"/>
+  <!-- RIGHT HERO VISUAL (Floating 3D Storybook Living World Diorama) -->
+  <g transform="translate(580, 40)" class="floating-island">
+    <!-- Island Base Ground Shadow -->
+    <ellipse cx="190" cy="300" rx="165" ry="42" fill="#3D2919" opacity="0.10" filter="url(#heroShadow)"/>
 
-    <!-- Floating Island Base / Crust -->
-    <g filter="url(#softShadow)">
-      <!-- Under Earth Layers -->
-      <path d="M 40,190 Q 180,245 320,190 L 305,245 Q 180,295 55,245 Z" fill="url(#islandEarth)" stroke="#8A7356" stroke-width="1.5"/>
-      <!-- Top Meadow Layer (Isometric Ellipse-Curve) -->
-      <path d="M 30,175 Q 180,120 330,175 Q 180,230 30,175 Z" fill="url(#islandGrass)" stroke="#5B9350" stroke-width="2"/>
+    <!-- Island Underground Layers -->
+    <g filter="url(#heroShadow)">
+      <path d="M 40,210 Q 190,265 340,210 L 320,268 Q 190,320 60,268 Z" fill="url(#earthCrust)" stroke="#8C7456" stroke-width="1.5"/>
+      <!-- Top Grassy Meadow Surface -->
+      <path d="M 30,195 Q 190,135 350,195 Q 190,255 30,195 Z" fill="url(#meadowTop)" stroke="#5B9350" stroke-width="2"/>
     </g>
 
-    <!-- Scenic Path on Island -->
-    <path d="M 65,178 Q 140,160 180,190 Q 230,220 290,185" fill="none" stroke="#EFE2CD" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
-    <path d="M 65,178 Q 140,160 180,190 Q 230,220 290,185" fill="none" stroke="#DBC8AB" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+    <!-- Cobblestone Walking Path -->
+    <path d="M 68,198 Q 145,178 190,210 Q 245,242 310,205" fill="none" stroke="#EFE4D2" stroke-width="15" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 68,198 Q 145,178 190,210 Q 245,242 310,205" fill="none" stroke="#DBC8AD" stroke-width="13" stroke-linecap="round" opacity="0.7"/>
 
-    <!-- Storybook Cottage / House -->
-    <g transform="translate(60, 105)">
-      <!-- Walls -->
-      <rect width="52" height="42" x="0" y="24" rx="4" fill="#FAF4EA" stroke="#685648" stroke-width="2"/>
-      <!-- Roof -->
-      <polygon points="26,0 -8,26 60,26" fill="#D9665B" stroke="#685648" stroke-width="2"/>
-      <!-- Window with warm glowing light -->
-      <rect width="14" height="14" x="8" y="34" rx="2" fill="#FEE398" stroke="#685648" stroke-width="1.5"/>
-      <line x1="15" y1="34" x2="15" y2="48" stroke="#685648" stroke-width="1"/>
-      <line x1="8" y1="41" x2="22" y2="41" stroke="#685648" stroke-width="1"/>
-      <!-- Door -->
-      <rect width="12" height="20" x="30" y="46" rx="2" fill="#8C6347" stroke="#685648" stroke-width="1.5"/>
-      <!-- Chimney with puff of smoke -->
-      <rect width="8" height="14" x="38" y="6" fill="#A8907E" stroke="#685648" stroke-width="1.5"/>
-      <circle cx="42" cy="0" r="4" fill="#FFFFFF" opacity="0.6"/>
-      <circle cx="46" cy="-8" r="6" fill="#FFFFFF" opacity="0.4"/>
+    <!-- Storybook Cottage -->
+    <g transform="translate(65, 120)">
+      <rect width="54" height="44" x="0" y="26" rx="4" fill="#FAF5EB" stroke="#685648" stroke-width="2"/>
+      <polygon points="27,0 -10,28 64,28" fill="#D9665B" stroke="#685648" stroke-width="2"/>
+      <rect width="14" height="14" x="8" y="36" rx="2" fill="#FEE398" stroke="#685648" stroke-width="1.5"/>
+      <line x1="15" y1="36" x2="15" y2="50" stroke="#685648" stroke-width="1"/>
+      <line x1="8" y1="43" x2="22" y2="43" stroke="#685648" stroke-width="1"/>
+      <rect width="14" height="22" x="32" y="48" rx="2" fill="#8C6347" stroke="#685648" stroke-width="1.5"/>
+      <rect width="8" height="14" x="40" y="6" fill="#A8907E" stroke="#685648" stroke-width="1.5"/>
+      <circle cx="44" cy="0" r="4" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="48" cy="-8" r="6" fill="#FFFFFF" opacity="0.4"/>
     </g>
 
-    <!-- Blossom Tree -->
-    <g transform="translate(265, 80)">
-      <!-- Trunk -->
-      <path d="M 20,95 Q 22,60 16,35 Q 24,50 30,95 Z" fill="#6E4D36" stroke="#483222" stroke-width="1.5"/>
-      <!-- Foliage Layers (Pink Blossom) -->
-      <circle cx="16" cy="30" r="26" fill="#F8A5B2" stroke="#483222" stroke-width="2"/>
-      <circle cx="34" cy="22" r="22" fill="#FBBEC7" stroke="#483222" stroke-width="2"/>
-      <circle cx="5" cy="18" r="18" fill="#FAD1D8" stroke="#483222" stroke-width="1.5"/>
+    <!-- Cherry Blossom Tree -->
+    <g transform="translate(280, 95)">
+      <path d="M 20,105 Q 22,65 16,40 Q 24,55 30,105 Z" fill="#6E4D36" stroke="#483222" stroke-width="1.5"/>
+      <circle cx="16" cy="34" r="28" fill="#F8A5B2" stroke="#483222" stroke-width="2"/>
+      <circle cx="36" cy="24" r="24" fill="#FBBEC7" stroke="#483222" stroke-width="2"/>
+      <circle cx="4" cy="20" r="20" fill="#FAD1D8" stroke="#483222" stroke-width="1.5"/>
     </g>
 
-    <!-- Couple Chibi Characters (Holding Hands) -->
-    <g transform="translate(160, 145)">
-      <!-- User (Boy - Left) -->
+    <!-- Couple Chibi Avatars Holding Hands -->
+    <g transform="translate(170, 160)">
+      <!-- Boy -->
       <g transform="translate(0, 0)">
-        <!-- Shadow -->
-        <ellipse cx="10" cy="36" r="8" ry="3" fill="#2E4A28" opacity="0.3"/>
-        <!-- Body / Outfit -->
-        <rect width="14" height="18" x="3" y="16" rx="5" fill="#789DC9" stroke="#333" stroke-width="1.5"/>
-        <!-- Head -->
-        <circle cx="10" cy="10" r="9" fill="#FFDFC4" stroke="#333" stroke-width="1.5"/>
-        <!-- Hair (Side-part brown) -->
-        <path d="M 2,8 Q 10,-1 18,6 Q 16,2 10,2 Q 4,2 2,8 Z" fill="#4E3629" stroke="#333" stroke-width="1.2"/>
-        <!-- Eyes -->
-        <circle cx="7" cy="10" r="1" fill="#333"/>
-        <circle cx="13" cy="10" r="1" fill="#333"/>
+        <ellipse cx="10" cy="38" r="8" ry="3" fill="#2E4A28" opacity="0.3"/>
+        <rect width="14" height="20" x="3" y="17" rx="5" fill="#789DC9" stroke="#333" stroke-width="1.5"/>
+        <circle cx="10" cy="11" r="9.5" fill="#FFDFC4" stroke="#333" stroke-width="1.5"/>
+        <path d="M 2,9 Q 10,0 18,7 Q 16,3 10,3 Q 4,3 2,9 Z" fill="#4E3629" stroke="#333" stroke-width="1.2"/>
+        <circle cx="7" cy="11" r="1" fill="#333"/>
+        <circle cx="13" cy="11" r="1" fill="#333"/>
       </g>
 
-      <!-- Heart floating above hands -->
-      <path d="M 19,8 C 19,5 16,5 16,8 C 16,11 19,13 19,15 C 19,13 22,11 22,8 C 22,5 19,5 19,8 Z" fill="#E85D6F"/>
+      <!-- Floating Heart -->
+      <path d="M 20,8 C 20,5 17,5 17,8 C 17,11 20,13 20,15 C 20,13 23,11 23,8 C 23,5 20,5 20,8 Z" fill="#E85D6F" class="heart-beat"/>
 
-      <!-- Companion (Girl - Right) -->
-      <g transform="translate(18, 2)">
-        <!-- Shadow -->
-        <ellipse cx="10" cy="34" r="8" ry="3" fill="#2E4A28" opacity="0.3"/>
-        <!-- Body / Dress -->
-        <path d="M 4,16 L 16,16 L 18,32 L 2,32 Z" fill="#F293A2" stroke="#333" stroke-width="1.5"/>
-        <!-- Head -->
-        <circle cx="10" cy="10" r="8.5" fill="#FFF0E1" stroke="#333" stroke-width="1.5"/>
-        <!-- Hair (Twin tails) -->
-        <path d="M 2,7 Q 10,0 18,7" fill="#6A4938" stroke="#333" stroke-width="1.2"/>
-        <circle cx="1" cy="9" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
-        <circle cx="19" cy="9" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
-        <!-- Eyes -->
-        <circle cx="7" cy="10" r="1" fill="#333"/>
-        <circle cx="13" cy="10" r="1" fill="#333"/>
+      <!-- Girl -->
+      <g transform="translate(20, 2)">
+        <ellipse cx="10" cy="36" r="8" ry="3" fill="#2E4A28" opacity="0.3"/>
+        <path d="M 4,17 L 16,17 L 18,34 L 2,34 Z" fill="#F293A2" stroke="#333" stroke-width="1.5"/>
+        <circle cx="10" cy="11" r="9" fill="#FFF0E1" stroke="#333" stroke-width="1.5"/>
+        <path d="M 2,8 Q 10,1 18,8" fill="#6A4938" stroke="#333" stroke-width="1.2"/>
+        <circle cx="1" cy="10" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
+        <circle cx="19" cy="10" r="3.5" fill="#6A4938" stroke="#333" stroke-width="1"/>
+        <circle cx="7" cy="11" r="1" fill="#333"/>
+        <circle cx="13" cy="11" r="1" fill="#333"/>
       </g>
     </g>
 
-    <!-- Garden Rabbit Companion -->
-    <g transform="translate(130, 185)">
+    <!-- Garden Rabbit -->
+    <g transform="translate(135, 205)">
       <ellipse cx="8" cy="10" r="6" ry="5" fill="#FFFFFF" stroke="#483222" stroke-width="1.2"/>
       <ellipse cx="6" cy="4" r="2" ry="5" fill="#FFD8DF" stroke="#483222" stroke-width="1" transform="rotate(-10 6 4)"/>
       <ellipse cx="10" cy="4" r="2" ry="5" fill="#FFD8DF" stroke="#483222" stroke-width="1" transform="rotate(10 10 4)"/>
@@ -208,33 +197,32 @@
       <circle cx="10" cy="9" r="0.8" fill="#483222"/>
     </g>
 
-    <!-- FLOATING FEATURE CARDS -->
-
-    <!-- Card 1: Memory Landmark Card (Top Left) -->
-    <g transform="translate(10, 20)" filter="url(#cardShadow)">
-      <rect width="150" height="48" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
+    <!-- Floating Cards -->
+    <!-- Card 1: Spatial Landmark -->
+    <g transform="translate(10, 30)" filter="url(#cardShadow)">
+      <rect width="154" height="48" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
       <rect width="30" height="30" x="9" y="9" rx="7" fill="#FFEFEA"/>
-      <text x="24" y="29" font-size="16" text-anchor="middle">📍</text>
+      <text x="24" y="29" font-size="15" text-anchor="middle">📍</text>
       <text x="46" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#2E241E">Sunset Beach</text>
       <text x="46" y="38" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="500" fill="#8C7969">Spatial Landmark</text>
     </g>
 
-    <!-- Card 2: Hand Holding Active (Bottom Right) -->
-    <g transform="translate(220, 210)" filter="url(#cardShadow)">
-      <rect width="144" height="46" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
+    <!-- Card 2: Hand Holding -->
+    <g transform="translate(230, 235)" filter="url(#cardShadow)">
+      <rect width="146" height="46" rx="10" fill="url(#cardBg)" stroke="#EBDDC8" stroke-width="1.5"/>
       <rect width="28" height="28" x="9" y="9" rx="7" fill="#FCEAEB"/>
       <text x="23" y="28" font-size="14" text-anchor="middle">❤️</text>
       <text x="44" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#B83A4B">Holding Hands</text>
       <text x="44" y="37" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600" fill="#5F9E52">Paired Walk Engine</text>
     </g>
 
-    <!-- Card 3: mimory_plus Active Badge (Top Right) -->
-    <g transform="translate(230, 10)" filter="url(#cardShadow)">
-      <rect width="138" height="42" rx="10" fill="#FEF8ED" stroke="#F6D49F" stroke-width="1.5"/>
-      <circle cx="22" cy="21" r="10" fill="#F4BA44"/>
-      <text x="22" y="25" font-size="11" text-anchor="middle" fill="#FFFFFF">✨</text>
-      <text x="38" y="20" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="800" fill="#995D13">mimory_plus</text>
-      <text x="38" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="700" fill="#4B8A3E">REVENUECAT VERIFIED</text>
+    <!-- Card 3: mimory_plus Verified -->
+    <g transform="translate(240, 20)" filter="url(#cardShadow)">
+      <rect width="144" height="44" rx="10" fill="#FEF8ED" stroke="#F6D49F" stroke-width="1.5"/>
+      <circle cx="22" cy="22" r="10" fill="#F4BA44"/>
+      <text x="22" y="26" font-size="11" text-anchor="middle" fill="#FFFFFF">✨</text>
+      <text x="38" y="21" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="800" fill="#995D13">mimory_plus</text>
+      <text x="38" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="700" fill="#4B8A3E">REVENUECAT VERIFIED</text>
     </g>
   </g>
 </svg>

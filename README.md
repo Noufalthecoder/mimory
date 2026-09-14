@@ -13,19 +13,53 @@
 
 <br/><br/>
 
-[**Product Vision**](#a-memory-shouldnt-disappear-into-a-camera-roll) • [**System Architecture**](#system-architecture) • [**Memory Walk Engine**](#memory-walk-spatial-engine) • [**RevenueCat Monetization**](#revenuecat--mimory-monetization) • [**Verification**](#verification--test-suite) • [**Quickstart**](#getting-started)
+[**The Human Problem**](#sometimes-one-moment-makes-us-forget-all-the-others) • [**The Living World Idea**](#what-if-your-memories-had-a-place-to-live) • [**The Emotional Loop**](#the-emotional-loop) • [**Memory Walk**](#signature-experience-memory-walk) • [**System Architecture**](#system-architecture) • [**RevenueCat Monetization**](#revenuecat--mimory-monetization) • [**Verification**](#verification--test-suite) • [**Quickstart**](#getting-started)
 
 </div>
 
 ---
 
-## A memory shouldn't disappear into a camera roll.
+## Sometimes one moment makes us forget all the others.
 
-People accumulate thousands of meaningful moments with the people who matter most—partners, best friends, and family. Yet today, those memories end up trapped in flat, chronological camera rolls or social feeds designed for public metrics rather than personal intimacy.
+People regularly capture meaningful moments with the people they care about: photos, messages, trips, inside jokes, and quiet everyday memories.
 
-**MIMORY gives those moments a place to live.**
+Yet those moments usually disappear into chronological camera rolls, endless message threads, and forgotten cloud storage.
 
-Instead of scrolling through an endless grid of timestamps, MIMORY lets you build dedicated storybook worlds for your relationships. Memories become physical landmarks along scenic paths, weather changes with real-world time and seasons, and the world visibly blooms and expands as your shared story deepens.
+More importantly, relationships naturally go through quiet periods:
+- Life becomes busy.
+- Someone moves away.
+- Communication slows down.
+- A small misunderstanding happens.
+
+In those moments, it is easy to become focused on the latest quietness or conflict, temporarily forgetting the much larger, warmer story already built together.
+
+> ### *MIMORY doesn't judge your relationships. MIMORY remembers them with you.*
+
+MIMORY preserves meaningful memories inside dedicated, living worlds. When a world has been quiet for a while, MIMORY can gently surface an older moment worth remembering—not as a guilt-driven relationship analysis, but as a gentle reminder of the foundation that already exists.
+
+<br/>
+
+<div align="center">
+  <img src="assets/docs/emotional_loop.svg" alt="The Emotional Loop of MIMORY" width="100%"/>
+</div>
+
+<br/>
+
+---
+
+## What if your memories had a place to live?
+
+MIMORY gives memories a spatial, emotional presence instead of leaving them as a flat chronological list:
+
+```
+  Camera Roll  ──→  Living Storybook World
+        Photo  ──→  Interactive Keepsake
+       Memory  ──→  Physical Landmark
+ Relationship  ──→  Dedicated World (Partner, Best Friend, Family)
+     Timeline  ──→  Story You Can Walk Through
+```
+
+When you create a world for someone important, you choose customizable chibi avatars and select a storybook aesthetic (*Cozy Town*, *Starlit Forest*, *Blooming Meadow*, or *Sunlit Valley*). As you add memories, they take root as interactive physical landmarks along scenic walking paths.
 
 <br/>
 
@@ -43,11 +77,11 @@ Instead of scrolling through an endless grid of timestamps, MIMORY lets you buil
   <tr>
     <td width="50%" valign="top">
       <h3>🏡 1. Dedicated Relationship Worlds</h3>
-      <p>Create separate, personal worlds for each relationship (Partner, Best Friend, Family). Choose from distinct themes including <i>Cozy Town</i>, <i>Starlit Forest</i>, <i>Blooming Meadow</i>, and <i>Sunlit Valley</i> with customizable chibi avatars.</p>
+      <p>Create separate, personal worlds for each relationship (Partner, Best Friend, Family). Customize chibi avatars with individualized hairstyles, hair colors, skin tones, and outfits.</p>
     </td>
     <td width="50%" valign="top">
       <h3>📸 2. Keepsake Photo &amp; Story Preservation</h3>
-      <p>Preserve milestones as photo keepsakes or written story vignettes. Photos are persisted locally in app-controlled sandbox storage, surviving device restarts and OS updates.</p>
+      <p>Preserve milestones as photo keepsakes or written story vignettes. Photos are persisted in app-controlled local sandbox storage, surviving device restarts and OS updates.</p>
     </td>
   </tr>
   <tr>
@@ -74,6 +108,28 @@ Instead of scrolling through an endless grid of timestamps, MIMORY lets you buil
 
 ---
 
+## Signature Experience: Memory Walk
+
+Instead of scrolling through your memories, **Memory Walk** lets you walk through them together.
+
+Memories become physical landmarks along winding paths. Direction signposts point the way toward milestones, and both characters explore in real time, sharing an umbrella when it rains or holding hands along the journey.
+
+<br/>
+
+<div align="center">
+  <img src="assets/docs/memory_walk_diagram.svg" alt="Memory Walk Spatial Engine" width="100%"/>
+</div>
+
+<br/>
+
+### Spatial Math Highlights
+
+1. **3D Perspective Camera (`Camera3D`)**: Mathematically projects 3D world coordinates `(x, y, z)` into screen space `(dx, dy)` using focal length (`500.0`) and pitch angles (`0.35 rad`), applying painter's algorithm depth sorting and distance scaling (`scale = focal / depth`).
+2. **Smooth Follow with Soft Dead-Zone**: A cinematic camera dead-zone (`dx: 20`, `dy: 25`) absorbs small joystick micro-movements, preventing camera jitter while smoothly following players via damped lag interpolation (`lagT = 0.15`).
+3. **Synchronized Paired Controller**: Custom `CustomPainter` character models synchronize leg swing cycles, direction facing, shared umbrella holding during rain, and hand-holding positions.
+
+---
+
 ## System Architecture
 
 MIMORY is engineered as a local-first, modular Flutter application with strict domain separation, reactive service orchestration, and verified entitlement monetization.
@@ -92,26 +148,6 @@ MIMORY is engineered as a local-first, modular Flutter application with strict d
 - **Core Design Tokens (`lib/core/`)**: Unified storybook design system with tactile pill buttons, custom text fields, and soft elevation tokens in `AppTheme`.
 - **Domain State Singletons (`lib/services/`)**: `WorldService` orchestrates user session, world management, and 1:N memory relations. `RevenueCatService` evaluates verified entitlement streams.
 - **Local-First Reliability**: `StorageService` serializes data to `SharedPreferences` while `path_provider` sandboxes high-resolution photos in `/mimory_photos/`, eliminating mandatory cloud dependencies.
-
----
-
-## Memory Walk: Spatial Engine
-
-Memory Walk transforms abstract dates into an explorable spatial journey using custom mathematical projection on Flutter's Canvas API.
-
-<br/>
-
-<div align="center">
-  <img src="assets/docs/memory_walk_diagram.svg" alt="Memory Walk Spatial Engine" width="100%"/>
-</div>
-
-<br/>
-
-### Spatial Math Highlights
-
-1. **3D Perspective Camera (`Camera3D`)**: Projects 3D world coordinates `(x, y, z)` into screen space `(dx, dy)` using focal length (`500.0`) and pitch angles (`0.35 rad`), applying painter's algorithm depth sorting and distance-based scaling (`scale = focal / depth`).
-2. **Smooth Follow with Soft Dead-Zone**: A cinematic camera dead-zone (`dx: 20`, `dy: 25`) absorbs small joystick micro-movements, preventing camera jitter while smoothly following players via damped lag interpolation (`lagT = 0.15`).
-3. **Synchronized Paired Controller**: Custom `CustomPainter` character models synchronize leg swing cycles, direction facing, shared umbrella holding during rain, and hand-holding positions.
 
 ---
 
@@ -136,7 +172,51 @@ MIMORY integrates the official RevenueCat Flutter SDK (`purchases_flutter: ^10.1
 
 ---
 
-## Technology Decisions
+## Engineering Decisions
+
+- **Local-First Reliability**: Memories are personal and sacred. All worlds, memories, and photos persist locally on device with zero cloud synchronization requirements for the core product experience.
+- **Strict 1:N World-Memory Isolation**: Each memory is bound to a persistent `worldId` via deterministic UUIDv4 identifiers, guaranteeing that memories never leak between separate relationships.
+- **Custom Canvas Rendering**: Programmatic Flutter `CustomPainter` rendering delivers native 60fps mobile canvas performance on iOS and Android without heavy 3D asset bundles.
+- **Clean Service Boundaries**: Services expose clean async contracts (`createWorld`, `purchasePackage`, `persistPhoto`) and emit reactive notifications via `ChangeNotifier`.
+
+---
+
+## Data Model
+
+```
+ ┌───────────────────────────────────┐
+ │               World               │
+ ├───────────────────────────────────┤
+ │ id: String (UUID)                 │
+ │ name: String                      │
+ │ relationshipType: String          │
+ │ personName: String                │
+ │ nickname: String?                 │
+ │ userAvatarId: String              │
+ │ companionAvatarId: String         │
+ │ worldStyle: String                │
+ │ createdAt: DateTime               │
+ └─────────────────┬─────────────────┘
+                   │
+                   │ 1 : N (via worldId)
+                   ▼
+ ┌───────────────────────────────────┐       ┌───────────────────────────────────┐
+ │              Memory               │       │             Character             │
+ ├───────────────────────────────────┤       ├───────────────────────────────────┤
+ │ id: String (UUID)                 │       │ id: String                        │
+ │ worldId: String                   │◄──────┤ worldId: String                   │
+ │ type: MemoryType (photo | story)  │       │ personName: String                │
+ │ title: String                     │       │ hairStyle: String                 │
+ │ description: String               │       │ hairColor: Color                  │
+ │ imagePath: String?                │       │ skinTone: Color                   │
+ │ memoryDate: DateTime              │       │ outfitColor: Color                │
+ │ createdAt: DateTime               │       │ isCurrentUser: bool               │
+ └───────────────────────────────────┘       └───────────────────────────────────┘
+```
+
+---
+
+## Technology
 
 <br/>
 
