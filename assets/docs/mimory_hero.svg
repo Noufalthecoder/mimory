@@ -84,22 +84,22 @@
       <g transform="translate(0, 0)">
         <rect width="94" height="28" rx="8" fill="#FFFFFF" stroke="#DCE4EC" stroke-width="1.2"/>
         <circle cx="14" cy="14" r="4" fill="#02569B"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Flutter 3.x</text>
+        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Flutter 3.x</text>
       </g>
       <g transform="translate(102, 0)">
         <rect width="74" height="28" rx="8" fill="#FFFFFF" stroke="#DCE4EC" stroke-width="1.2"/>
         <circle cx="14" cy="14" r="4" fill="#0175C2"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Dart</text>
+        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#2E3842">Dart</text>
       </g>
       <g transform="translate(184, 0)">
         <rect width="122" height="28" rx="8" fill="#FEF6EE" stroke="#F6D4B0" stroke-width="1.2"/>
         <circle cx="14" cy="14" r="4" fill="#E56A38"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700" fill="#A84318">RevenueCat</text>
+        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#A84318">RevenueCat</text>
       </g>
       <g transform="translate(314, 0)">
         <rect width="106" height="28" rx="8" fill="#F2F8F0" stroke="#CCE0C8" stroke-width="1.2"/>
         <circle cx="14" cy="14" r="4" fill="#5F9E52"/>
-        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="600" fill="#2E6123">Local-First</text>
+        <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#2E6123">Local-First</text>
       </g>
     </g>
   </g>
@@ -195,7 +195,7 @@
       <rect width="28" height="28" x="9" y="9" rx="7" fill="#FCEAEB"/>
       <text x="23" y="28" font-size="14" text-anchor="middle">❤️</text>
       <text x="44" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#B83A4B">Holding Hands</text>
-      <text x="44" y="37" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9.5" font-weight="600" fill="#5F9E52">Paired Walk Engine</text>
+      <text x="44" y="37" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600" fill="#5F9E52">Paired Walk Engine</text>
     </g>
 
     <!-- Card 3: mimory_plus Verified (Top Right of Island) -->

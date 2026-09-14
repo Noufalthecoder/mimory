@@ -1,15 +1,6 @@
 <div align="center">
 
-<img src="assets/docs/hero_banner.svg" alt="MIMORY — Your people. Your moments. Your world." width="100%"/>
-
-<br/>
-
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/></a>
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/Dart-3.x-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart"/></a>
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/RevenueCat-purchases__flutter-E56A38?style=flat-square" alt="RevenueCat"/></a>
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/Platform-iOS%20%7C%20Android-5856D6?style=flat-square" alt="Platform"/></a>
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/Architecture-Local--First-5F9E52?style=flat-square" alt="Local-First"/></a>
-<a href="https://github.com/Noufalthecoder/mimory"><img src="https://img.shields.io/badge/Tests-36%20Passed-4CAF50?style=flat-square" alt="Tests"/></a>
+<img src="assets/docs/mimory_hero.svg" alt="MIMORY — Your people. Your moments. Your world." width="100%"/>
 
 <br/><br/>
 
