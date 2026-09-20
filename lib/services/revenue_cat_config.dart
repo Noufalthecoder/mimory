@@ -38,34 +38,64 @@ class RevenueCatConfig {
   /// Default offering identifier
   static const String defaultOffering = 'default';
 
-  /// RevenueCat Test Store public SDK key (Shipaton / Student / Next Gen)
+  /// RevenueCat Test Store public SDK key (for development & test environments)
   static const String apiKeyTestStore = 'test_aToLAmiQXjnnqPxxxISoWwxRVAK';
 
-  /// Public SDK key for Android devices & emulators
-  static const String apiKeyAndroid = apiKeyTestStore;
+  /// Production Android Public SDK key (starts with "goog_")
+  /// Can be set here or injected at build time via:
+  /// `--dart-define=REVENUECAT_ANDROID_KEY=goog_...`
+  static const String apiKeyAndroidProduction = String.fromEnvironment(
+    'REVENUECAT_ANDROID_KEY',
+    defaultValue: '',
+  );
 
-  /// Public SDK key for iOS devices & simulators
-  static const String apiKeyIOS = apiKeyTestStore;
+  /// Production iOS Public SDK key (starts with "appl_")
+  /// Can be set here or injected at build time via:
+  /// `--dart-define=REVENUECAT_IOS_KEY=appl_...`
+  static const String apiKeyIOSProduction = String.fromEnvironment(
+    'REVENUECAT_IOS_KEY',
+    defaultValue: '',
+  );
 
-  /// Returns the appropriate public API key for the current runtime platform.
+  /// Returns the appropriate public SDK key for the current platform and build mode.
+  ///
+  /// In RELEASE mode:
+  /// - Android uses [apiKeyAndroidProduction]. Test Store keys are NEVER used in release
+  ///   to prevent RevenueCat native security popups and process termination.
+  /// - iOS uses [apiKeyIOSProduction].
+  ///
+  /// In DEBUG / DEVELOPMENT mode:
+  /// - Falls back to [apiKeyTestStore] for sandbox testing and unit test suites.
   static String get apiKey {
-    if (kIsWeb) {
-      return apiKeyAndroid;
+    if (kReleaseMode) {
+      if (Platform.isIOS || Platform.isMacOS) {
+        return apiKeyIOSProduction;
+      }
+      return apiKeyAndroidProduction;
     }
+
+    // Development / Test mode
     if (Platform.isIOS || Platform.isMacOS) {
-      return apiKeyIOS;
+      return apiKeyIOSProduction.isNotEmpty ? apiKeyIOSProduction : apiKeyTestStore;
     }
-    return apiKeyAndroid;
+    return apiKeyAndroidProduction.isNotEmpty ? apiKeyAndroidProduction : apiKeyTestStore;
   }
 
-  /// Checks if the configured API key is valid and not a placeholder
+  /// Checks if the configured API key is valid for the current runtime mode
   static bool get isConfigured {
     final key = apiKey;
-    return !key.contains('REPLACE_WITH_YOUR_PUBLIC') &&
-        key.isNotEmpty &&
-        (key.startsWith('goog_') ||
-            key.startsWith('appl_') ||
-            key.startsWith('rc_') ||
-            key.startsWith('test_'));
+    if (key.isEmpty) return false;
+
+    if (kReleaseMode) {
+      // Release builds must use official store public SDK keys (goog_ or appl_).
+      // Test store keys (test_) are strictly disallowed in release mode.
+      return key.startsWith('goog_') || key.startsWith('appl_');
+    }
+
+    // Development / Test builds allow test store keys as well
+    return key.startsWith('goog_') ||
+        key.startsWith('appl_') ||
+        key.startsWith('rc_') ||
+        key.startsWith('test_');
   }
 }

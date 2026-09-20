@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mimory/core/theme/app_theme.dart';
 import 'package:mimory/services/world_service.dart';
 import 'package:mimory/features/auth/screens/welcome_screen.dart';
-import 'package:mimory/features/world/screens/your_worlds_screen.dart';
+import 'package:mimory/features/book/presentation/book_cover.dart';
 
 import 'package:mimory/services/revenue_cat_service.dart';
 
@@ -26,7 +26,7 @@ class MimoryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final worldService = WorldService();
     final initialHome = worldService.isLoggedIn
-        ? const YourWorldsScreen()
+        ? const BookCoverScreen()
         : const WelcomeScreen();
 
     return MaterialApp(

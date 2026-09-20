@@ -4,6 +4,12 @@
 
 <br/><br/>
 
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+![RevenueCat](https://img.shields.io/badge/RevenueCat-%23F55F55.svg?style=for-the-badge&logo=revenuecat&logoColor=white)
+
+<br/>
+
 ### *MIMORY turns the moments you share with the people you love into little worlds you can revisit.*
 
 <br/>
@@ -211,6 +217,36 @@ MIMORY is engineered as a local-first, modular Flutter application with strict d
 - **Domain State Singletons (`lib/services/`)**: `WorldService` orchestrates active user session, world management, and 1:N memory relations. `RevenueCatService` evaluates verified entitlement streams.
 - **Local-First Core & Media Sandbox (`StorageService`)**: `SharedPreferences` serializes structured JSON worlds and memories, while `path_provider` sandboxes high-resolution photos in `/mimory_photos/`, eliminating mandatory cloud dependencies.
 - **Monetization Infrastructure (`purchases_flutter`)**: Official RevenueCat Flutter SDK handles offerings delivery, receipt verification, and entitlement evaluation.
+
+### AWS Cloud Architecture (Phase 4 Integration)
+
+While MIMORY operates locally, it is architected for seamless future integration with Amazon Web Services. The data layer will synchronize transparently with AWS when connected.
+
+```text
+Flutter App
+     ↓
+Amazon Cognito (Auth & Identity)
+     ↓
+Amazon API Gateway
+     ↓
+AWS Lambda (Serverless Compute)
+     ↓
+ ├── Amazon DynamoDB
+ │   ├── Users
+ │   ├── Worlds
+ │   ├── Moments
+ │   ├── Goals
+ │   ├── Achievements
+ │   └── Chapters
+ │
+ ├── Amazon S3
+ │   ├── Photos
+ │   ├── Videos
+ │   └── Audio
+ │
+ └── Amazon Bedrock
+     └── Memory Echo (Generative AI Pattern Discovery)
+```
 
 ---
 
