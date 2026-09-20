@@ -2,15 +2,24 @@
 
 <img src="assets/docs/mimory_hero.svg" alt="MIMORY — Your people. Your moments. Your world." width="100%"/>
 
-<br/><br/>
+[**The Idea**](#sometimes-one-moment-makes-us-forget-all-the-others) • [**The Living Book**](#the-living-book) • [**The Daily Loop**](#from-tasks-to-memories) • [**Little Wins**](#little-wins) • [**Memory Walk**](#signature-experience-memory-walk) • [**AWS Architecture**](#aws-cloud-architecture) • [**Engineering**](#engineering-decisions) • [**Verification**](#verification--test-suite) • [**Quickstart**](#getting-started)
 
+<br/><br/>
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-%23569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white)
+![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-%23405DE6.svg?style=for-the-badge&logo=amazondynamodb&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-%23FF9900.svg?style=for-the-badge&logo=awslambda&logoColor=white)
+![Amazon Cognito](https://img.shields.io/badge/Cognito-%23DD344C.svg?style=for-the-badge&logo=amazon-cognito&logoColor=white)
+
+
 ![RevenueCat](https://img.shields.io/badge/RevenueCat-%23F55F55.svg?style=for-the-badge&logo=revenuecat&logoColor=white)
 
 <br/>
 
-### *MIMORY turns the moments you share with the people you love into little worlds you can revisit.*
+### *MIMORY turns what you do, what you achieve, and what you remember into a little world you can revisit.*
 
 <br/>
 
@@ -135,6 +144,29 @@ Subscribing to MIMORY+ unlocks unlimited relationship worlds, dynamic living wea
 ```
   MIMORY+ Paywall  ──→  RevenueCat Purchase  ──→  Verified Entitlement  ──→  "World Just Grew"
 ```
+## The Living Book
+
+MIMORY's main interface isn't a dashboard.
+
+It's a book.
+
+A book that changes as you live.
+
+You open it and move through the different parts of your story:
+
+```text
+TODAY
+  ↓
+GOALS
+  ↓
+LITTLE WINS
+  ↓
+MOMENTS
+  ↓
+CHAPTERS
+  ↓
+MY WORLD
+
 
 <br/>
 
